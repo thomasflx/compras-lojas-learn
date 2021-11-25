@@ -2,11 +2,11 @@
 
 <html>
 
-<?php
-
-include('includes/head.php');
-
-?>
+<head>
+	<?php
+	include('includes/head.php');
+	?>
+</head>
 
 <body>
 

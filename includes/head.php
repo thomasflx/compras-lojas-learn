@@ -1,5 +1,3 @@
 
-<head>
-	<meta charset="utf-8" />
-	<title>Compras Lojas Learn</title>
-</head>
+<meta charset="utf-8" />
+<title>Compras Lojas Learn</title>
