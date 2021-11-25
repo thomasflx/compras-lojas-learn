@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-	<meta charset="utf-8" />
-	<title>Compras Lojas Learn</title>
+	<?php
+	include('includes/head.php');
+	?>
 </head>
-	
+
 <body>
 
 	<h1>Página Inicial</h1>
