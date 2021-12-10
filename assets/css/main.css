@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	text-align: center;
+	padding: 15px 0;
+	background: #333;
+	color: #fff;
+}
+
+#menu a {
+	color: #fff;
+	text-decoration: none;
+}
