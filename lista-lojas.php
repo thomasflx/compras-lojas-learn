@@ -3,7 +3,7 @@
 <title>ompras Lojas Learn</title>
 <html>
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https: //fonts.googleapis.com/css2? family= Hind:wght@700 & display=swap" rel="stylesheet">
 		
@@ -14,26 +14,25 @@
 		<style>
 			
 			h1 {
-				
 				color: rgb(59, 20, 217);
 			}
 			
 			img, h2 {
 				font: bold;
 				width: 220px;
-				margin: 9px 140px -2px 81px;
-				border: 9px ridge red;
+				margin: auto;
+				border: 7px ridge black;
 			}
 			
 			.lojas {
 				font: bold;
-				margin: 32px 54px 13px 1px;
+				margin: auto;
 			}
 			
 			#menu {
 				text-align: center;
 				padding: 4px 0;
-				background: red;
+				background: black;
 				color: white;
 			}
 			
@@ -67,7 +66,7 @@ include('includes/header.php');
 					<h1 class="lojas">Feirinha do Zé</h1>
 					<div><img src = "https://media.istockphoto.com/photos/green-organic-broccoli-on-the-table-picture-id1340593316?b=1&k=20&m=1340593316&s=170667a&w=0&h=ToW2h55MHkiWv30UtAw4urgND3rW4oC9kpFgUdEDCKo="></div>
 				</a>
-				<h2>Vende: Frutas e Verduras</h2>
+				<h2>Vende: De frutas e verduras a brinquedos de má qualidade.</h2>
 			</li>
 			<li>
 				<a href="http://localhost/compras-lojas-learn/.php">
