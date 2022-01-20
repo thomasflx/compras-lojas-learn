@@ -13,6 +13,9 @@
 </head>
 
 <body>
+<?php
+include('includes/header.php');
+?>
 
 	<h1>Lista de produtos da loja</h1>
 	<h2> Açougue</h2>
