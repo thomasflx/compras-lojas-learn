@@ -26,13 +26,13 @@
 				background: rgb(59, 20, 217);
 			}
 			
-			ul {
+			ul, li {
 				border-top: 1px solid black;
                 border-bottom: 1px solid black;
 			}
 			
 			img {
-				width: 550px;
+				width: 100px;
 				margin: center;
 				border: 5px ridge black;
 				float: left;
@@ -41,7 +41,7 @@
 			}
 			
 			.lojas {
-				font: bold;
+				font: monospace;
 				margin: auto;
 			}
 			
