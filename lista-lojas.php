@@ -14,7 +14,7 @@
 		<style>
 			
 			body {
-				background: green;
+				background: rgb (0,0,7);
 			}
 			
 			h1 {
@@ -32,7 +32,7 @@
 			}
 			
 			img {
-				width: 100px;
+				width: 300px;
 				margin: center;
 				border: 5px ridge black;
 				float: left;
@@ -62,6 +62,10 @@ include('includes/header.php');
 					Vende: De Papai Cruel tocando trompete, a tudo entre R$1,00 e R$99,00
 				</p>
 			</li>
+			
+		</ul>
+		<ul>
+			
 			<li>
 				<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 					<h1 class="lojas">Feirinha do Zé</h1>
@@ -71,6 +75,11 @@ include('includes/header.php');
 					Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
 				</p>
 			</li>
+			
+		</ul>
+		<ul>
+
+			
 			<li>
 				<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 					<h1 class="lojas">Padaria Thomas e Seus Amigos</h1>
