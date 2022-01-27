@@ -17,25 +17,22 @@
 				background: rgb (0,0,7);
 			}
 			
-			h1 {
+			h1, h2 {
+				background: rgb (0,0,7);
 				color: rgb(59, 20, 217);
+				float: right;
 			}
 			
-			p {
-				font: bold;
-				background: rgb(59, 20, 217);
-			}
-			
-			ul, li {
+			li {
 				border-top: 1px solid black;
                 border-bottom: 1px solid black;
 			}
 			
 			img {
-				width: 300px;
+				width: 400px;
+				weight: 300px;
 				margin: center;
 				border: 5px ridge black;
-				float: left;
 				margin-right: 20px;
 				margin-bottom: 7px;
 			}
