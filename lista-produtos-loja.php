@@ -18,40 +18,20 @@ include('includes/header.php');
 ?>
 
 	<h1>Lista de produtos da loja</h1>
-	<h2> Açougue</h2>
-	<h2>Limpeza</h2>
-	<h2>Padaria</h2>
-	<h2>Hortaliças</h2>
-	<h2>Cosméticos<em>/</em>Perfumaria</h2>
 	
-	<strong><em>Açougue</em></strong>
-	<ul>
-	<li>Picadinho</li>
-	<li>Cupim</li>
-	<li> Costelinha</li>
-	</ul>
+	<h2>Escolha o setor da sua compra:</h2>
 	
-	<strong><em>Limpeza</em></strong>
-	<ul>
-	<li>Sabão Líquido</li>
-	<li>Amaciante</li>
-	<li>Detergente</li>
-	</ul>
 	
-	<strong><em>Padaria</em></strong>
-	<ul>
-	<li>Pão Francês</li>
-	<li>Rosquinha</li>
-	<li>Baguete</li>
-	</ul>
 	
-	<strong><em>Hortaliças</em></strong>
-	<ul>
-	<li>Alface</li>
-	<li>Hortelã</li>
-	<li>Agrião</li>
-	</ul>
-
-
+	<p> Açougue</p>
+	<p>Limpeza</p>
+	<p>Padaria</p>
+	<p>Hortaliças</p>
+	<p>Cosméticos<em>/</em>Perfumaria</p>
+	
+	<a href= "url">http://localhost/compras-lojas-learn/setor-padaria.php</a>
+	<a href="url">http://localhost/compras-lojas-learn/setor-limpeza.php</a>
+	
+	
 </body>
 </html>
