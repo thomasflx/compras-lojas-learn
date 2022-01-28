@@ -23,14 +23,13 @@ include('includes/header.php');
 	
 	
 	
-	<p> Açougue</p>
-	<p>Limpeza</p>
-	<p>Padaria</p>
-	<p>Hortaliças</p>
+	<p><a href="http://localhost/compras-lojas-learn/setor-a%C3%A7ougue.php">Açougue</a></p>
+	<p><a href="http://localhost/compras-lojas-learn/setor-limpeza.php">Limpeza</a></p>
+	<p><a href= "http://localhost/compras-lojas-learn/setor-padaria.php">Padaria</a></p>
+	<p><a href= "http://localhost/compras-lojas-learn/setor-hortali%C3%A7as">Hortaliças</a></p>
 	<p>Cosméticos<em>/</em>Perfumaria</p>
 	
-	<a href= "url">http://localhost/compras-lojas-learn/setor-padaria.php</a>
-	<a href="url">http://localhost/compras-lojas-learn/setor-limpeza.php</a>
+	
 	
 	
 </body>
