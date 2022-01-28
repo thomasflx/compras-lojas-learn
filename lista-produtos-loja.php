@@ -25,11 +25,10 @@ include('includes/header.php');
 	
 	<p> Açougue</p>
 	<p>Limpeza</p>
-	<p>Padaria</p>
+	<a href="http://localhost/compras-lojas-learn/setor-padaria.php">Padaria</a>
 	<p>Hortaliças</p>
 	<p>Cosméticos<em>/</em>Perfumaria</p>
 	
-	<a href= "url">http://localhost/compras-lojas-learn/setor-padaria.php</a>
 	<a href="url">http://localhost/compras-lojas-learn/setor-limpeza.php</a>
 	
 	
