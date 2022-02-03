@@ -58,7 +58,7 @@
 				width: 200px;
 				height: 200px;
 				border: 5px ridge black;
-				margin-right: 7px;
+				margin-left: 500px;
 				margin-bottom: 7px;
 				object-fit: cover;
 			}
@@ -93,30 +93,34 @@
 						Lojas Mel:
 					</a>
 					<p>
-						Vende: De Papai Cruel tocando trompete, a tudo entre R$1,00 e R$99,00.
+						Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.
 					</p>
 				</div>
-				<img src="assets/img/danilo-alvesd-tWWXxURT94g-unsplash.jpg">
+				<img src="IMG-20220120-WA0033.jpg">
 			</div>
 
 			<div class="loja">
-				<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-					Feirinha do Zé:
-				</a>
-				<p>
-					Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
-				</p>
+				<div class="loja-info">
+					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+						Feirinha do Zé:
+					</a>
+					<p>
+						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
+					</p>
+				</div>
 				<img src = "https://media.istockphoto.com/photos/green-organic-broccoli-on-the-table-picture-id1340593316?b=1&k=20&m=1340593316&s=170667a&w=0&h=ToW2h55MHkiWv30UtAw4urgND3rW4oC9kpFgUdEDCKo=">
 				
 			</div>
 
 			<div class="loja">
-				<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-					Padaria Thomas e Seus Amigos:
-				</a>
-				<p>
-					Vende: De pão, a bilhete do bingo de domingo.
-				</p>
+				<div class="loja-info">
+					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+						Padaria Thomas e Seus Amigos:
+					</a>
+					<p>
+						Vende: De pão, a bilhete do bingo de domingo.
+					</p>
+				</div>
 				<img src = "https://images.unsplash.com/photo-1593113249517-6baf5dd14fb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1010&q=80">
 			</div>
 		</div>
