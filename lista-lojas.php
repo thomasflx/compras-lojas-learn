@@ -96,7 +96,7 @@
 						Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.
 					</p>
 				</div>
-				<img src="IMG-20220120-WA0033.jpg">
+				<img src="https://photos.app.goo.gl/v5umeMH35TJMmqAo7">
 			</div>
 
 			<div class="loja">
@@ -108,7 +108,7 @@
 						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
 					</p>
 				</div>
-				<img src = "https://media.istockphoto.com/photos/green-organic-broccoli-on-the-table-picture-id1340593316?b=1&k=20&m=1340593316&s=170667a&w=0&h=ToW2h55MHkiWv30UtAw4urgND3rW4oC9kpFgUdEDCKo=">
+				<img src = "https://images.unsplash.com/photo-1598357850706-0188bc0372b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80">
 				
 			</div>
 
