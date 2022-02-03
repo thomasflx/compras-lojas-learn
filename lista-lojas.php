@@ -57,7 +57,6 @@
 			img {
 				width: 200px;
 				height: 200px;
-				margin: center;
 				border: 5px ridge black;
 				margin-right: 7px;
 				margin-bottom: 7px;
@@ -101,7 +100,7 @@
 			</div>
 
 			<div class="loja">
-				<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+				<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 					Feirinha do Zé:
 				</a>
 				<p>
@@ -112,7 +111,7 @@
 			</div>
 
 			<div class="loja">
-				<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+				<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 					Padaria Thomas e Seus Amigos:
 				</a>
 				<p>
