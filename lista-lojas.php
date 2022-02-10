@@ -12,16 +12,7 @@
 		?>
 		
 		<style>
-			
-			body {
-				background: rgb (0,0,7);
-			}
-			
-			h1, h2 {
-				background: rgb (0,0,7);
-				color: rgb(59, 20, 217);
-			}
-			
+			/* Caixa de testes com flexbox */
 			#test-flex {
 				display: none;
 				height: 100vh;
@@ -43,6 +34,7 @@
 				display: flex;
 				padding: 15px;
 				border-bottom: 1px solid #333;
+				justify-content: space-between;
 			}
 			
 			.titulo-loja {
@@ -58,7 +50,6 @@
 				width: 200px;
 				height: 200px;
 				border: 5px ridge black;
-				margin-left: 500px;
 				margin-bottom: 7px;
 				object-fit: cover;
 			}
@@ -96,7 +87,7 @@
 						Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.
 					</p>
 				</div>
-				<img src="https://photos.google.com/share/AF1QipPa1fD0J_gmeONjNPGvGaSq36v0K6NQ_-Mr1Omu5to1ToUH3WWZMvkcQNuAbWZhdw/photo/AF1QipML-jp60ooQOzd-BxinBAOb-BtLA8Vuldv-YUAA?key=WmtwamU1YWV5T3JBNFVCajc5Y0c2YmNTVlk0VGtn">
+				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
 			</div>
 
 			<div class="loja">
@@ -108,7 +99,7 @@
 						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
 					</p>
 				</div>
-				<img src = "https://images.unsplash.com/photo-1598357850706-0188bc0372b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80">
+				<img src="http://localhost/compras-lojas-learn/assets/img/IMG-20220120-WA0033.jpg">
 				
 			</div>
 

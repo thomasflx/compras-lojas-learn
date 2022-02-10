@@ -26,9 +26,9 @@ include('includes/header.php');
 
 	<p><a href="http://localhost/compras-lojas-learn/setor-a%C3%A7ougue.php">Açougue</a></p>
 	<p><a href="http://localhost/compras-lojas-learn/setor-limpeza.php">Limpeza</a></p>
-	<p><a href= "http://localhost/compras-lojas-learn/setor-padaria.php">Padaria</a></p>
-	<p><a href= "http://localhost/compras-lojas-learn/setor-hortali%C3%A7as.php">Hortaliças</a></p>
-	<p><a href= "http://localhost/compras-lojas-learn/setor-cosmeticos.php">Cosméticos<em>/</em>Perfumaria</a href></p>
+	<p><a href="http://localhost/compras-lojas-learn/setor-padaria.php">Padaria</a></p>
+	<p><a href="http://localhost/compras-lojas-learn/setor-hortali%C3%A7as.php">Hortaliças</a></p>
+	<p><a href="http://localhost/compras-lojas-learn/setor-cosmeticos.php">Cosméticos / Perfumaria</a></p>
 	
 </body>
 </html>
