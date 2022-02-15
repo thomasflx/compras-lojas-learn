@@ -74,7 +74,7 @@
 			<p>7</p>
 			<p>8</p>
 		</div>
-		/* Loja 1 */
+		
 		<div id="lojas">
 			<div class="loja">
 				<div class="loja-info">
@@ -87,7 +87,7 @@
 				</div>
 				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
 			</div>
-			/* Loja 2 */
+			
 			<div class="loja">
 				<div class="loja-info">
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
@@ -97,9 +97,9 @@
 						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.
 					</p>
 				</div>
-				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos">
+				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas">
 			</div>
-			/* Loja 3 */
+
 			<div class="loja">
 				<div class="loja-info">
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
@@ -109,7 +109,7 @@
 						Vende: De pão, a bilhete do bingo de domingo.
 					</p>
 				</div>
-				<img src = "http://localhost/compras-lojas-learn/assets/img/danilo-alvesd-tWWXxURT94g-unsplash" alt="O carro da CPTM passando em São Paulo">
+				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
 			</div>
 		</div>
 
