@@ -27,9 +27,6 @@
 				margin: 15px;
 			}
 			
-			#lojas {
-			}
-			
 			.loja {
 				display: flex;
 				padding: 15px;
@@ -47,7 +44,7 @@
 			}
 			
 			img {
-				width: 200px;
+				width: 300px;
 				height: 200px;
 				border: 5px ridge black;
 				margin-bottom: 7px;
@@ -66,6 +63,7 @@
 		include('includes/header.php');
 		?>
 		
+		/* Caixa de testes com flexbox */
 		<div id="test-flex">
 			<p>1</p>
 			<p>2</p>
@@ -76,7 +74,7 @@
 			<p>7</p>
 			<p>8</p>
 		</div>
-		
+		/* Loja 1 */
 		<div id="lojas">
 			<div class="loja">
 				<div class="loja-info">
@@ -89,20 +87,19 @@
 				</div>
 				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
 			</div>
-
+			/* Loja 2 */
 			<div class="loja">
 				<div class="loja-info">
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Feirinha do Zé:
 					</a>
 					<p>
-						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
+						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.
 					</p>
 				</div>
-				<img src="http://localhost/compras-lojas-learn/assets/img/IMG-20220120-WA0033.jpg">
-				
+				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos">
 			</div>
-
+			/* Loja 3 */
 			<div class="loja">
 				<div class="loja-info">
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
@@ -112,7 +109,7 @@
 						Vende: De pão, a bilhete do bingo de domingo.
 					</p>
 				</div>
-				<img src = "https://images.unsplash.com/photo-1593113249517-6baf5dd14fb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1010&q=80">
+				<img src = "http://localhost/compras-lojas-learn/assets/img/danilo-alvesd-tWWXxURT94g-unsplash" alt="O carro da CPTM passando em São Paulo">
 			</div>
 		</div>
 
