@@ -12,7 +12,7 @@
 	</style>
 </head>
 
-<body style="background-color:lightgreen;">
+<body style="background-color:white;">
 <?php
 include('includes/header.php');
 ?>
