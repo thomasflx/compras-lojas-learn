@@ -9,7 +9,7 @@
 	
 	<h2>Escolha seus produtos e adicione no carrinho!</h2>
 	
-	<img src="assets/img/produtos-de-limpeza-para-desenhos-animados-em-casa_18591-52030.webp" alt="produtos de limpeza">
+	<img src="assets/img/economizar-gastos-produtos-limpeza.jpg" alt="produtos de limpeza">
 	
 	<ul>
 	<li>Água Sanitária</li>

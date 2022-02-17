@@ -17,14 +17,15 @@
 				background: #FFFFFF;				
 			}
 			
-			/* Caixa de testes com flexbox */
-			#test-flex {
-				display: none;
-				height: 100vh;
-				flex-wrap: wrap;
-				align-items: center;
-				justify-content: end;
+			img {
+				width: 300px;
+				height: 200px;
+				border: 5px ridge gray;
+				margin-bottom: 7px;
+				object-fit: cover;
 			}
+			
+			/* Caixa de testes com flexbox */
 			#test-flex p {
 				width: 200px;
 				height: 200px;
@@ -32,6 +33,15 @@
 				margin: 15px;
 			}
 			
+			#test-flex {
+				display: none;
+				height: 100vh;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: end;
+			}				
+			
+			/* Cotrole das lojas */
 			.loja {
 				display: flex;
 				padding: 15px;
@@ -39,29 +49,20 @@
 				justify-content: space-between;
 			}
 			
-			.titulo-loja {
-				font-size: 2em;
-			}
-			
 			.lojas {
-				font: monospace;
 				margin: auto;
 			}
 			
-			li {
-				border-top: 1px solid black;
-                border-bottom: 1px solid white;
+			.titulo-loja {
+				font-family:fantasy;
+				font-size: 2em;
 			}
 			
-			img {
-				width: 300px;
-				height: 200px;
-				border: 5px ridge black;
-				margin-bottom: 7px;
-				object-fit: cover;
-			}
-			
-			
+			.loja-subtitulo {
+				font-family: ;
+				font-size: 20px;
+				margin: center;
+			}		
 			
 		</style>
 	</head>
@@ -108,10 +109,10 @@
 
 			<div class="loja">
 				<div class="loja-info">
-					<a class="loja-subtitulo" class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Padaria Thomas e Seus Amigos:
 					</a>
-					<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Vende: De pão, a bilhete do bingo de domingo.
 					</a>
 				</div>
