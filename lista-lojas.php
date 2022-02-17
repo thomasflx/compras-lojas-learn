@@ -63,7 +63,6 @@
 		include('includes/header.php');
 		?>
 		
-		/* Caixa de testes com flexbox */
 		<div id="test-flex">
 			<p>1</p>
 			<p>2</p>
