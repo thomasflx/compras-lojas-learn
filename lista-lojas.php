@@ -12,6 +12,11 @@
 		?>
 		
 		<style>
+			
+			body {
+				background: #FFFFFF;				
+			}
+			
 			/* Caixa de testes com flexbox */
 			#test-flex {
 				display: none;
@@ -38,6 +43,11 @@
 				font-size: 2em;
 			}
 			
+			.lojas {
+				font: monospace;
+				margin: auto;
+			}
+			
 			li {
 				border-top: 1px solid black;
                 border-bottom: 1px solid white;
@@ -51,10 +61,7 @@
 				object-fit: cover;
 			}
 			
-			.lojas {
-				font: monospace;
-				margin: auto;
-			}
+			
 			
 		</style>
 	</head>
@@ -80,9 +87,9 @@
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Lojas Mel:
 					</a>
-					<p>
+					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.
-					</p>
+					</a>
 				</div>
 				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
 			</div>
@@ -92,21 +99,21 @@
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Feirinha do Zé:
 					</a>
-					<p>
+					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.
-					</p>
+					</a>
 				</div>
 				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas">
 			</div>
 
 			<div class="loja">
 				<div class="loja-info">
-					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+					<a class="loja-subtitulo" class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Padaria Thomas e Seus Amigos:
 					</a>
-					<p>
+					<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Vende: De pão, a bilhete do bingo de domingo.
-					</p>
+					</a>
 				</div>
 				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
 			</div>
