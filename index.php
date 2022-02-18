@@ -13,7 +13,9 @@
 include('includes/header.php');
 ?>
 
+<main id="main">
 	<h1>Página Inicial</h1>
+</main>
 
 </body>
 </html>
