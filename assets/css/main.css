@@ -1,6 +1,9 @@
 body{
 	margin: 0;
 	padding: 0;
+	background: #eee;
+	color: #2E292A;
+	font-family: "Open Sans", sans-serif;
 }
 
 #menu {
@@ -13,4 +16,15 @@ body{
 #menu a {
 	color: #fff;
 	text-decoration: none;
+}
+
+#main {
+	width: 90vw;
+	margin: 0 auto;
+	padding: 15px;
+	background: #fff;
+}
+
+#main h1 {
+	margin-top: 0;
 }
