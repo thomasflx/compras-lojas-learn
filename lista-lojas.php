@@ -12,14 +12,20 @@
 		?>
 		
 		<style>
-			/* Caixa de testes com flexbox */
-			#test-flex {
-				display: none;
-				height: 100vh;
-				flex-wrap: wrap;
-				align-items: center;
-				justify-content: end;
+			
+			body {
+				background: #FFD4D4;				
 			}
+			
+			img {
+				width: 300px;
+				height: 200px;
+				border: 5px ridge gray;
+				margin-bottom: 7px;
+				object-fit: cover;
+			}
+			
+			/* Caixa de testes com flexbox */
 			#test-flex p {
 				width: 200px;
 				height: 200px;
@@ -27,9 +33,15 @@
 				margin: 15px;
 			}
 			
-			#lojas {
-			}
+			#test-flex {
+				display: none;
+				height: 100vh;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: end;
+			}				
 			
+			/* Cotrole das lojas */
 			.loja {
 				display: flex;
 				padding: 15px;
@@ -37,27 +49,21 @@
 				justify-content: space-between;
 			}
 			
+			.lojas {
+				margin: auto;
+			}
+			
 			.titulo-loja {
+				text-shadow: 2px 2px #ff0000;
+				font-family: fantasy;
 				font-size: 2em;
 			}
 			
-			li {
-				border-top: 1px solid black;
-                border-bottom: 1px solid black;
-			}
-			
-			img {
-				width: 200px;
-				height: 200px;
-				border: 5px ridge black;
-				margin-bottom: 7px;
-				object-fit: cover;
-			}
-			
-			.lojas {
-				font: monospace;
-				margin: auto;
-			}
+			.loja-subtitulo {
+				font-family: monospace;
+				font-size: 20px;
+				margin: center;
+			}		
 			
 		</style>
 	</head>
@@ -83,24 +89,23 @@
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Lojas Mel:
 					</a>
-					<p>
-						Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.
-					</p>
+					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+						<p>Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.</p>
+					</a>
 				</div>
 				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
 			</div>
-
+			
 			<div class="loja">
 				<div class="loja-info">
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Feirinha do Zé:
 					</a>
-					<p>
-						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia.
-					</p>
+					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+						<p>Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.</p>
+					</a>
 				</div>
-				<img src="http://localhost/compras-lojas-learn/assets/img/IMG-20220120-WA0033.jpg">
-				
+				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas">
 			</div>
 
 			<div class="loja">
@@ -108,11 +113,11 @@
 					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 						Padaria Thomas e Seus Amigos:
 					</a>
-					<p>
-						Vende: De pão, a bilhete do bingo de domingo.
-					</p>
+					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+						<p>Vende: De pão, a bilhete do bingo de domingo.</p>
+					</a>
 				</div>
-				<img src = "https://images.unsplash.com/photo-1593113249517-6baf5dd14fb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1010&q=80">
+				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
 			</div>
 		</div>
 
