@@ -14,7 +14,7 @@
 		<style>
 			
 			body {
-				background: #FFFFFF;				
+				background: #FFD4D4;				
 			}
 			
 			img {
@@ -90,7 +90,7 @@
 						Lojas Mel:
 					</a>
 					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.
+						<p>Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.</p>
 					</a>
 				</div>
 				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
@@ -102,7 +102,7 @@
 						Feirinha do Zé:
 					</a>
 					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.
+						<p>Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.</p>
 					</a>
 				</div>
 				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas">
@@ -114,7 +114,7 @@
 						Padaria Thomas e Seus Amigos:
 					</a>
 					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						Vende: De pão, a bilhete do bingo de domingo.
+						<p>Vende: De pão, a bilhete do bingo de domingo.</p>
 					</a>
 				</div>
 				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
