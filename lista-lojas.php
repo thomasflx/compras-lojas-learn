@@ -25,6 +25,27 @@
 				object-fit: cover;
 			}
 			
+			p {
+				color: black;
+			}
+			
+			a:link {
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: blue;
+			}
+			
+			a:houver {
+				text-decoration: underline;
+				backgrund: blue;				
+			}
+			
+			a:active {
+				background-color: red;
+			}
+			
 			/* Caixa de testes com flexbox */
 			#test-flex p {
 				width: 200px;
