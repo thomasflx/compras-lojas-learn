@@ -43,7 +43,11 @@
 			}
 			
 			a:active {
-				background-color: red;
+				background: red;
+			}
+			
+			a:focus {
+				background: green;
 			}
 			
 			/* Caixa de testes com flexbox */
