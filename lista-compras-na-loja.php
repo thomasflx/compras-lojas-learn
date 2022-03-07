@@ -17,12 +17,33 @@
 				background: #FFD4D4;				
 			}
 			
+			h2 {
+				margin: center;
+			}
+			
+			.produtos {
+				background: rgb(230, 230, 230);
+				width: 91%;
+				height: 180px;
+				overflow-y: auto;
+				overflow-x: hidden;
+				margin: 17px 0px 19px 6px;
+				border: #FFD4D4;
+				padding: 6px;
+			}
+			
+			
+			
 		</style>
 	</head>
 	<body>
 		<?php
 		include('includes/header.php');
 		?>
-
+		
+		<h2>Você selecionou:</h2>
+		<div class="produtos">
+		<p></p>
+		</div>
 	</body>
 </html>
