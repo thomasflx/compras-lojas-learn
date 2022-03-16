@@ -83,5 +83,17 @@
 			</div>	
 			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem de um produto">
 		</div>
+		<div class="produtos">
+			<div class="info-produto">
+				<h2>
+					Exemplo de Produto
+				</h2>
+				<p>
+					A descrição do produto
+				</p>
+			</div>	
+			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem de um produto">
+		</div>
+		</div>
 	</body>
 </html>
