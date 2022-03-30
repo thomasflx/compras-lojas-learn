@@ -145,6 +145,5 @@
 				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
 			</div>
 		</div>
-
 	</body>
 </html>

@@ -21,6 +21,27 @@
 				margin: auto;
 			}
 			
+			a:link {
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: blue;
+			}
+			
+			a:houver {
+				text-decoration: underline;
+				backgrund: blue;				
+			}
+			
+			a:active {
+				background: red;
+			}
+			
+			a:focus {
+				background: green;
+			}
+			
 			img {
 				width: 300px;
 				height: 170px;
@@ -60,7 +81,14 @@
 				font-size: 20px;
 				margin: center;
 			}
-						
+			
+			.botoes {
+				background-color: #FFD4D4;
+				font-family: fantasy;
+				border: 5px ridge #7B6C6C;
+				display: inline-block
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -80,20 +108,11 @@
 				<p>
 					A descrição do produto
 				</p>
+				<a class="botoes" href="">
+					<p>Adicionar ao Carrinho</p>
+				</a>
 			</div>	
 			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem de um produto">
-		</div>
-		<div class="produtos">
-			<div class="info-produto">
-				<h2>
-					Exemplo de Produto
-				</h2>
-				<p>
-					A descrição do produto
-				</p>
-			</div>	
-			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem de um produto">
-		</div>
 		</div>
 	</body>
 </html>
