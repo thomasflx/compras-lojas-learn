@@ -1,12 +1,27 @@
+<?php
+
+$lojas = array(
+	array(
+		'titulo' => 'Lojas Mel',
+		'descricao' => 'Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.',
+		'imagem' => ''
+	),
+	array(
+		'titulo' => '',
+		'descricao' => '',
+		'imagem' => ''
+	)
+);
+
+//echo $lojas[0]['titulo'];
+
+?>
+
 <!DOCTYPE html>
 <meta charset="utf8" />
 <title>Compras Lojas Learn</title>
 <html>
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https: //fonts.googleapis.com/css2? family= Hind:wght@700 & display=swap" rel="stylesheet">
-		
 		<?php
 		include('includes/head.php');
 		?>

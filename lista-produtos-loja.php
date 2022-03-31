@@ -1,3 +1,15 @@
+<?php
+
+$setores = array(
+	'Açougue',
+	'Limpeza',
+	'Padaria'
+);
+
+//echo $setores[1];
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -24,7 +36,8 @@ include('includes/header.php');
 	<h2>Escolha o setor da sua compra:</h2>
 	
 
-	<p><a href="http://localhost/compras-lojas-learn/setor-a%C3%A7ougue.php">Açougue</a></p>
+	<p><a href="http://localhost/compras-lojas-learn/setor.php?loja=lojas-mel&setor=acougue">Açougue</a></p>
+
 	<p><a href="http://localhost/compras-lojas-learn/setor-limpeza.php">Limpeza</a></p>
 	<p><a href="http://localhost/compras-lojas-learn/setor-padaria.php">Padaria</a></p>
 	<p><a href="http://localhost/compras-lojas-learn/setor-hortali%C3%A7as.php">Hortaliças</a></p>
