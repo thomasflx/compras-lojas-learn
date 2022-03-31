@@ -9,7 +9,7 @@
 	<body style="background-color:beige;">
 		
 		
-		<h2><em>Escolha seus produtos e adicione no carrinho!</em></h2>
+		<h2><em>Escolha seus produtos e adicione ao carrinho!</em></h2>
 
 	<h2><strong>Carne Bovina</strong></h2>
 	<ul>

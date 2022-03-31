@@ -25,6 +25,31 @@
 				object-fit: cover;
 			}
 			
+			p {
+				color: black;
+			}
+			
+			a:link {
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: blue;
+			}
+			
+			a:houver {
+				text-decoration: underline;
+				backgrund: blue;				
+			}
+			
+			a:active {
+				background: red;
+			}
+			
+			a:focus {
+				background: green;
+			}
+			
 			/* Caixa de testes com flexbox */
 			#test-flex p {
 				width: 200px;
@@ -120,6 +145,5 @@
 				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
 			</div>
 		</div>
-
 	</body>
 </html>
