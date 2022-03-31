@@ -66,7 +66,6 @@
 			.produtos {
 				background: #FFFEFE;
 				width: 99%;
-				height: 180px;
 				overflow-y: auto;
 				overflow-x: auto;
 				margin: 17px auto 17px auto;
@@ -80,13 +79,6 @@
 				font-family: fantasy;
 				font-size: 20px;
 				margin: center;
-			}
-			
-			.botoes {
-				background-color: #FFD4D4;
-				font-family: fantasy;
-				border: 5px ridge #7B6C6C;
-				display: inline-block
 			}
 			
 		</style>
@@ -109,7 +101,7 @@
 					A descrição do produto
 				</p>
 				<a class="botoes" href="">
-					<p>Adicionar ao Carrinho</p>
+					Adicionar ao Carrinho
 				</a>
 			</div>	
 			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem de um produto">

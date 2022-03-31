@@ -1,4 +1,8 @@
-body{
+* {
+	box-sizing: border-box;
+}
+
+body {
 	margin: 0;
 	padding: 0;
 	background: #eee;
@@ -27,4 +31,17 @@ body{
 
 #main h1 {
 	margin-top: 0;
+}
+
+.botoes {
+	text-decoration: none;
+	padding: 15px 30px;
+	background-color: #AAD4FF;
+	border: none;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.botoes:hover {
+	background-color: #7AA4DD;
 }
