@@ -95,12 +95,10 @@ $lojas = array(
 			
 			.titulo-loja {
 				text-shadow: 2px 2px #ff0000;
-				font-family: fantasy;
 				font-size: 2em;
 			}
 			
 			.loja-subtitulo {
-				font-family: monospace;
 				font-size: 20px;
 				margin: center;
 			}		
