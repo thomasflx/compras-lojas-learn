@@ -17,27 +17,6 @@
 				background: #FFD4D4;				
 			}
 			
-			a:link {
-				text-decoration: none;
-			}
-			
-			a:visited {
-				color: blue;
-			}
-			
-			a:houver {
-				text-decoration: underline;
-				backgrund: blue;				
-			}
-			
-			a:active {
-				background: red;
-			}
-			
-			a:focus {
-				background: green;
-			}
-			
 			.produtos {
 				background: #FFFEFE;
 				width: 99%;
