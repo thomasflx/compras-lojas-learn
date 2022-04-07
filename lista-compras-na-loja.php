@@ -21,27 +21,6 @@
 				margin: auto;
 			}
 			
-			a:link {
-				text-decoration: none;
-			}
-			
-			a:visited {
-				color: blue;
-			}
-			
-			a:houver {
-				text-decoration: underline;
-				backgrund: blue;				
-			}
-			
-			a:active {
-				background: red;
-			}
-			
-			a:focus {
-				background: green;
-			}
-			
 			img {
 				width: 300px;
 				height: 170px;
@@ -53,11 +32,9 @@
 			#vc-sel {
 				background: #FFFEFE;
 				width: 36%;
-				height: 65px;
 				overflow-y: auto;
 				overflow-x: auto;
 				margin: auto;
-				border: 5px ridge #7B6C6C;
 				padding: 1px;
 				text-shadow: 2px 2px #ff0000;
 				font-size: 2em;
@@ -76,7 +53,6 @@
 			}
 			
 			.info-produto {
-				font-family: fantasy;
 				font-size: 20px;
 				margin: center;
 			}
@@ -100,11 +76,11 @@
 				<p>
 					A descrição do produto
 				</p>
-				<a class="botoes" href="">
+				<a class="botoes" href="http://localhost/compras-lojas-learn/pagina-da-compra.php">
 					Adicionar ao Carrinho
 				</a>
 			</div>	
-			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem de um produto">
+			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem do produto selecionado">
 		</div>
 	</body>
 </html>
