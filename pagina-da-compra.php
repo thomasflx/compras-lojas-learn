@@ -12,7 +12,6 @@
 		?>
 		
 		<style>
-			
 			body {
 				background: #FFD4D4;				
 			}
@@ -25,10 +24,9 @@
 				margin: 17px auto 17px auto;
 				border:  5px  #7B6C6C;
 				padding: 17px;
-				display: flex;
+				display: block;
 				justify-content: space-between;
-			}
-			
+			}			
 		</style>
 	</head>
 	<body>
@@ -45,26 +43,22 @@
 			<input type="text" id="endereco" />
 			
 			<label for="n-da-casa">Número da Casa:</label>
-			<input type="text" id="n-da-casa" />
+			<input type="number" id="n-da-casa" />
 			
 			<label for="cep">CEP:</label>
-			<input type="text" id="cep" />
+			<input type="number" id="cep" />
 			
 			<label for="nome-completo">Nome Completo:</label>
 			<input type="text" id="nome-completo" />
 			
 			<label for="cpf">CPF:</label>
-			<input type="text" id="cpf" />
+			<input type="number" id="cpf" />
 			
 			<label for="e-mail">e-mail:</label>
-			<input type="text" id="e-mail" />
+			<input type="e-mail" id="e-mail" />
 			
 			<label for="n-de-celular">Número de Celular:</label>
-			<input type="text" id="n-de-celular" />
-			
-			<h3>
-				help!
-			</h3>
+			<input type="number" id="n-de-celular" />
 		</div>
 	</body>
 </html>
