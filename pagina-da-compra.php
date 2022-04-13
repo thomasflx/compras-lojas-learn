@@ -39,26 +39,40 @@
 				Exemplo de Produto
 			</h2>
 			
-			<label for="endereco">Endereço:</label>
-			<input type="text" id="endereco" />
+			<div class="produtos">	
+				<label for="endereco">Endereço:</label>
+				<input type="text" id="endereco" />
+			</div>
 			
-			<label for="n-da-casa">Número da Casa:</label>
-			<input type="number" id="n-da-casa" />
+			<div class="produtos">	
+				<label for="n-da-casa">Número da Casa:</label>
+				<input type="number" id="n-da-casa" />
+			</div>
 			
-			<label for="cep">CEP:</label>
-			<input type="number" id="cep" />
+			<div class="produtos">	
+				<label for="cep">CEP:</label>
+				<input type="number" id="cep" />
+			</div>
 			
-			<label for="nome-completo">Nome Completo:</label>
-			<input type="text" id="nome-completo" />
+			<div class="produtos">	
+				<label for="nome-completo">Nome Completo:</label>
+				<input type="text" id="nome-completo" />
+			</div>
 			
-			<label for="cpf">CPF:</label>
-			<input type="number" id="cpf" />
+			<div class="produtos">	
+				<label for="cpf">CPF:</label>
+				<input type="number" id="cpf" />
+			</div>
 			
-			<label for="e-mail">e-mail:</label>
-			<input type="e-mail" id="e-mail" />
+			<div class="produtos">	
+				<label for="e-mail">e-mail:</label>
+				<input type="e-mail" id="e-mail" />
+			</div>
 			
-			<label for="n-de-celular">Número de Celular:</label>
-			<input type="number" id="n-de-celular" />
+			<div class="produtos">	
+				<label for="n-de-celular">Número de Celular:</label>
+				<input type="number" id="n-de-celular" />
+			</div>
 		</div>
 	</body>
 </html>
