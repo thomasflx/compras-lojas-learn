@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<meta charset="utf8" />
-<title>Compras Lojas Learn</title>
+
 <html>
 	<head>
+		<meta charset="utf8" />
+		<title>Compras Lojas Learn</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https: //fonts.googleapis.com/css2? family= Hind:wght@700 & display=swap" rel="stylesheet">
@@ -24,7 +25,6 @@
 			img {
 				width: 300px;
 				height: 170px;
-				border: 5px ridge gray;
 				margin-bottom: 7px;
 				object-fit: cover;
 			}
@@ -60,6 +60,7 @@
 		</style>
 	</head>
 	<body>
+	
 		<?php
 		include('includes/header.php');
 		?>
@@ -68,19 +69,38 @@
 				Você selecionou:
 			</h2>
 		</div>
+		<div></div>
 		<div class="produtos">
 			<div class="info-produto">
-				<h2>
-					Exemplo de Produto
-				</h2>
-				<p>
-					A descrição do produto
-				</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Produto</th>
+							<th>Descrição</th>
+							<th>Quantidade</th>
+							<th>Entrega</th>
+							<th>Preço</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img src="assets/img/gif-bye-Groot.gif" alt="A imagem do produto selecionado"></td>	
+							<td>Exemplo de descrição</td>
+							<td>
+								<label for="qnt"></label>
+								<input type="number" id="qnt" />
+							</td>
+							<td>4 dias úteis</td>
+							<td>R$ 50,00</td>
+						</tr>
+					</tbody>
+				</table>
 				<a class="botoes" href="http://localhost/compras-lojas-learn/pagina-da-compra.php">
-					Adicionar ao Carrinho
+					Comprar
 				</a>
-			</div>	
-			<img src="assets/img/gif-bye-Groot.gif" alt="A imagem do produto selecionado">
+				<div></div>
+			</div>		
 		</div>
+		
 	</body>
 </html>
