@@ -76,15 +76,20 @@
 					<thead>
 						<tr>
 							<th>Produto</th>
-							<th>Qnt.</th>
+							<th>Descrição</th>
+							<th>Quantidade</th>
 							<th>Entrega</th>
 							<th>Preço</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><img src="assets/img/gif-bye-Groot.gif" alt="A imagem do produto selecionado"> Descrição do Produto</td>	
-							<td>1</td>
+							<td><img src="assets/img/gif-bye-Groot.gif" alt="A imagem do produto selecionado"></td>	
+							<td>Exemplo de descrição</td>
+							<td>
+								<label for="qnt"></label>
+								<input type="number" id="qnt" />
+							</td>
 							<td>4 dias úteis</td>
 							<td>R$ 50,00</td>
 						</tr>
