@@ -1,7 +1,7 @@
 <?php
 
 $setores = array(
-	'Açougue',
+	'acougue' => 'Açougue',
 	'Limpeza',
 	'Padaria'
 );
