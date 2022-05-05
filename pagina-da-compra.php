@@ -22,7 +22,7 @@
 				overflow-y: auto;
 				overflow-x: auto;
 				margin: 17px auto 17px auto;
-				border:  5px  #7B6C6C;
+				border: radius 5px  #7B6C6C;
 				padding: 17px;
 				display: block;
 				justify-content: space-between;
