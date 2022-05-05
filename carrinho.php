@@ -85,12 +85,12 @@
 					<tbody>
 						<tr>
 							<td><img src="assets/img/gif-bye-Groot.gif" alt="A imagem do produto selecionado"></td>	
-							<td>Exemplo de descrição | </td>
+							<td>Exemplo de descrição</td>
 							<td>
 								<label for="qnt"></label>
-								<input type="number" id="qnt" />
+								<input type="number" id="qnt"/>
 							</td>
-							<td>4 dias úteis | </td>
+							<td>4 dias úteis</td>
 							<td>R$ 50,00</td>
 						</tr>
 					</tbody>
@@ -104,3 +104,20 @@
 		
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
