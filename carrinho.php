@@ -1,25 +1,34 @@
 <?php
-	// Produtos no carrinho
-	$produtos = [
-		[
-			'titulo' => 'Escova de dentes',
-			'preco' => 5.99,
-			'descricao' => '1 em cada 10 dentistas aprova'
-		],
-		[
-			'titulo' => 'Alface',
-			'preco' => 4.50,
-			'descricao' => 'Não dura 2 dias na geladeira'
-		],
-		[
-			'titulo' => 'Feijão',
-			'preco' => 8.99,
-			'descricao' => 'Ou compra ou não compra'
-		]
-	];
+// Produtos no carrinho
+$produtos = [
+	[
+		'titulo' => 'Escova de dentes',
+		'preco' => 5.99,
+		'descricao' => '1 em cada 10 dentistas aprova'
+	],
+	[
+		'titulo' => 'Alface',
+		'preco' => 4.50,
+		'descricao' => 'Não dura 2 dias na geladeira'
+	],
+	[
+		'titulo' => 'Feijão',
+		'preco' => 8.99,
+		'descricao' => 'Ou compra ou não compra'
+	],
+	[
+		'titulo' => 'Feijão',
+		'preco' => 8.99,
+		'descricao' => 'Ou compra ou não compra'
+	]
+];
 
-	$quantidade = count($produtos);
-	$preco = "RS$1.000,00";
+$quantidade = count($produtos);
+
+$preco = 0;
+foreach($produtos as $produto) {
+	$preco = $preco + $produto['preco'];
+}
 
 ?>
 
@@ -66,7 +75,7 @@
 						<?php foreach($produtos as $produto) : ?>
 							<li><?=$produto['titulo']?></li>
 							<li>descricao</li>
-							<li>Valor</li>
+							<li>5,50</li>
 						<?php endforeach; ?>
 					</ul>
 				</div>
