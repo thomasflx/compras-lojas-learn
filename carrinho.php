@@ -1,66 +1,45 @@
+<?php
+	$quantidade = 2;
+	$preco = "RS$1.000,00";
+
+?>
+
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf8" />
-		<title>Compras Lojas Learn</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https: //fonts.googleapis.com/css2? family= Hind:wght@700 & display=swap" rel="stylesheet">
-		
-		<?php
-		include('includes/head.php');
-		?>
-		
-		<style>
-			
-			body {
-				background: #FFD4D4;				
-			}
-			
-			h2 {
-				margin: auto;
-			}
-			
-			img {
-				width: 300px;
-				height: 170px;
-				margin-bottom: 7px;
-				object-fit: cover;
-			}
-			
-			#vc-sel {
-				background: #FFFEFE;
-				width: 36%;
-				overflow-y: auto;
-				overflow-x: auto;
-				margin: auto;
-				padding: 1px;
-				text-shadow: 2px 2px #ff0000;
-				font-size: 2em;
-			}
-			
-			.produtos {
-				background: #FFFEFE;
-				width: 99%;
-				overflow-y: auto;
-				overflow-x: auto;
-				margin: 17px auto 17px auto;
-				border:  5px  #7B6C6C;
-				padding: 17px;
-				display: flex;
-				justify-content: space-between;
-			}
-			
-			.info-produto {
-				font-size: 20px;
-				margin: center;
-			}
-			
-		</style>
-	</head>
-	<body>
+<head>
+	<?php
+	include('includes/head.php');
+	?>
 	
+</head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  flex-wrap: wrap;
+}
+
+#main-flex {
+  background-color: orange;
+}
+
+#side-flex {
+  background-color: red;
+  }
+ 
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  background-color: gray;
+
+</style>
+<body>
+<?php
+	include('includes/header.php');
+?>
+	
+<<<<<<< HEAD
 		<?php
 		include('includes/header.php');
 		?>
@@ -121,3 +100,17 @@
 
 
 
+=======
+	<main id="main">
+		<div class=flex-container>
+			<div style="flex-basis:800px" id="main-flex">
+				<h1> Carrinho de sompras</h1>
+			</div>
+			<div style="flex-basis:300px" id="side-flex">
+				<h3>Subtotal (<?=$quantidade?> itens):</h3>
+				<h2><?=$preco?></h2>
+			</div>
+	</main>
+</body>
+</html>
+>>>>>>> b0d40b410f73aab8403028b8d2cd90f67a79dd65
