@@ -35,40 +35,37 @@ foreach($produtos as $produto) {
 <!DOCTYPE html>
 
 <html>
-<head>
-	<?php
-	include('includes/head.php');
-	?>
+	<head>
+		
+		<?php
+		include('includes/head.php');
+		?>
+		
+	</head>
+	<style>
 	
-</head>
-<style>
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-  flex-wrap: wrap;
-}
+		.flex-container {
+		  display: flex;
+		  background-color: DodgerBlue;
+		  flex-wrap: wrap;
+		}
 
-#main-flex {
-  background-color: orange;
-}
+		#main-flex {
+		  background-color: orange;
+		}
 
-#side-flex {
-  background-color: red;
-  }
- 
-.flex-container > div {
-  margin: 10px;
-  padding: 20px;
-  background-color: gray;
+		#side-flex {
+		  background-color: red;
+		  }
+		 
+		.flex-container > div {
+		  margin: 10px;
+		  padding: 20px;
+		  background-color: gray;
 
-</style>
-<body>
-<?php
-	include('includes/header.php');
-?>
-<<<<<<< HEAD
-	
-<<<<<<< HEAD
+	</style>
+	<body>
+
 		<?php
 		include('includes/header.php');
 		?>
