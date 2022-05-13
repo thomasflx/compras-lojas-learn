@@ -1,14 +1,48 @@
 <?php
 
-$setores = array(
-	'acougue' => 'Açougue',
-	'limpeza' => 'Limpeza',
-	'padaria' => 'Padaria',
-	'frutas-legumes' => 'Frutas e Legumes',
-	'perfumaria' => 'Perfumaria'
-);
+// Define as variáveis
+$loja = null;
+$setor = null;
 
-//echo $setores[1];
+// Pega a variável da URL ex. lista-produtos-loja.php?loja=sonda&setor=mercearia
+if (!empty($_GET['loja'])) {
+	$loja = $_GET['loja'];
+}
+if (!empty($_GET['setor'])) {
+	$setor = $_GET['setor'];
+}
+
+// Todos os setores e seus produtos
+$setores = array(
+	'mercearia' => [
+		'titulo' => 'Mercearia',
+		'produtos' => [
+			'arroz' => 'Arroz',
+			'acucar' => 'Açucar',
+			'bolachas' => 'Bolachas',
+			'salgadinho' => 'Salgadinho', 
+			'cafe-soluvel' => 'Café Solúvel',
+			'cha' => 'Chá',
+			'macarrao' => 'Macarrão'
+		]
+	],
+	'limpeza' => [
+		'titulo' => 'Produtos de limpeza',
+		'produtos' => [
+			'candida' => 'Cândida',
+			'ajax' => 'Ajax',
+			'detergente' => 'Detergente'
+		]
+	],
+	'padaria' => [
+		'titulo' => 'Padaria Sonho de Padeiro',
+		'produtos' => [
+			'pao-frances' => 'Pão Francês',
+			'pao-doce' => 'Pão doce',
+			'pao-queijo' => 'Pão de queijo'
+		]
+	]
+);
 
 ?>
 
@@ -26,25 +60,25 @@ $setores = array(
 	</style>
 </head>
 
-<body style="background-color:#F0EAD2;">
-<?php
-include('includes/header.php');
-?>
-
-
-
-	<h1>Todas as Seções</h1>
+<body>
+	<?php
+	include('includes/header.php');
+	?>
 	
-	<h2>Escolha o setor da sua compra:</h2>
+	<?php if (isset($setores[$setor])) : ?>
 	
-
-	<p><a href="http://localhost/compras-lojas-learn/acouguemix.php">Açougue</a></p>
-	<p><a href="http://localhost/compras-lojas-learn/mercearia.php"> Mercearia</a></p>
-	<p><a href="http://localhost/compras-lojas-learn/setor.php?loja=lojas-mel&setor=acougue">Limpeza</a></p>
-	<p><a href="http://localhost/compras-lojas-learn/testedesetor.php">Padaria</a></p>
-	<p><a href="http://localhost/compras-lojas-learn/coisadefeira.php">Hortaliças</a></p>
-	<p><a href="http://localhost/compras-lojas-learn/perfumaria.php">Perfumaria</a></p>
+		Eu sou um setor que existe
+		
+	<?php else : ?>
 	
+		<h1>Todas as Seções</h1>
+		
+		<h2>Escolha o setor da sua compra:</h2>
+		
+		<?php foreach($setores as $c => $v) : ?>
+			<p><a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja?>&setor=<?=$c?>"><?=$v['titulo']?></a></p>
+		<?php endforeach; ?>
 	
+	<?php endif; ?>
 </body>
 </html>
