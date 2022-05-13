@@ -4,12 +4,20 @@ $lojas = array(
 	array(
 		'titulo' => 'Lojas Mel',
 		'descricao' => 'Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.',
-		'imagem' => ''
+		'imagem' => 'assets/img/IMG-20220120-WA0033.jpg',
+		'alt' => 'Fachada das lojas mel desenhada'
 	),
 	array(
-		'titulo' => '',
-		'descricao' => '',
-		'imagem' => ''
+		'titulo' => 'Feirinha do Zé:',
+		'descricao' => 'Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.',
+		'imagem' => 'http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg',
+		'alt'	=> 'Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas'
+	),
+	array(
+		'titulo' => 'Padaria Thomas e Seus Amigos:',
+		'descricao' => 'Vende: De pão, a bilhete do bingo de domingo.',
+		'imagem' => 'http://localhost/compras-lojas-learn/assets/img/cptm.jpg',
+		'alt' => 'O carro da CPTM passando em São Paulo'
 	)
 );
 
@@ -18,8 +26,6 @@ $lojas = array(
 ?>
 
 <!DOCTYPE html>
-<meta charset="utf8" />
-<title>Compras Lojas Learn</title>
 <html>
 	<head>
 		<?php
@@ -110,53 +116,29 @@ $lojas = array(
 		include('includes/header.php');
 		?>
 		
-		<div id="test-flex">
-			<p>1</p>
-			<p>2</p>
-			<p>3</p>
-			<p>4</p>
-			<p>5</p>
-			<p>6</p>
-			<p>7</p>
-			<p>8</p>
-		</div>
-		
 		<div id="lojas">
-			<div class="loja">
-				<div class="loja-info">
-					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						Lojas Mel:
-					</a>
-					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						<p>Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.</p>
-					</a>
+			<?php foreach($lojas as $loja) : ?>
+				<div class="loja">
+					<div class="loja-info">
+						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+							<?php 
+							echo $loja['titulo'];
+							?>
+						</a>
+						<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+							<p>
+								<?php 
+								echo $lojas[0]['descricao'];
+								?>
+							</p>
+						</a>
+					</div>
+					<img
+						src="<?=$loja['imagem']?>"
+						alt="<?=$loja['alt']?>"
+					>
 				</div>
-				<img src="assets/img/IMG-20220120-WA0033.jpg" alt="Fachada das lojas mel desenhada">
-			</div>
-			
-			<div class="loja">
-				<div class="loja-info">
-					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						Feirinha do Zé:
-					</a>
-					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						<p>Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.</p>
-					</a>
-				</div>
-				<img src="http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg" alt="Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas">
-			</div>
-
-			<div class="loja">
-				<div class="loja-info">
-					<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						Padaria Thomas e Seus Amigos:
-					</a>
-					<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-						<p>Vende: De pão, a bilhete do bingo de domingo.</p>
-					</a>
-				</div>
-				<img src = "http://localhost/compras-lojas-learn/assets/img/cptm.jpg" alt="O carro da CPTM passando em São Paulo">
-			</div>
+			<?php endforeach; ?>
 		</div>
 	</body>
 </html>
