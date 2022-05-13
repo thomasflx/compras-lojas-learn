@@ -39,89 +39,86 @@ foreach($produtos as $produto) {
 	<?php
 	include('includes/head.php');
 	?>
-	
+	<style>
+		.flex-container {
+			display: flex;
+			background-color: DodgerBlue;
+			flex-wrap: nowrap;
+		}
+
+		.flex-produtos {
+			display: flex;
+			background-color: DodgerBlue;
+			flex-wrap: nowrap;
+		}
+
+		#main-flex {
+			background-color: orange;
+			flex-grow: 10;
+		}
+
+		#side-flex {
+			background-color: red;
+			flex-basis: 30em;
+		}
+		 
+		.flex-container > div {
+			margin: 10px;
+			padding: 20px;
+			background-color: gray;
+		}
+			
+		#produto-div {
+			margin-top: 0.83em;
+			margin-bottom: 0em;
+			margin-right: 0.5em;
+			background-color: white;
+			flex-grow: 1;
+			max-width: %;
+		}
+
+		#preco-div {
+			margin-top: 0.83em;
+			margin-bottom: 0em;
+			margin-left: 0.5em;
+			background-color: white;
+			flex-basis: 5em;
+		}
+			
+		#nome-produto {
+			font-size: 1.5em;
+			margin-top: 0em;
+			margin-bottom: 0.1em;
+			font-weight: bold;
+		}
+
+		#descricao-produto {
+			font-size: 0.85em;
+			margin-top: 0em;
+			margin-bottom: 0em;
+			font-weight: normal;
+		}
+
+		#preco-produto {
+			font-size: 2em;
+			margin-top: 0em;
+			margin-bottom: 0em;
+			font-weight: bold;
+		}
+
+		.btn-continue-comprando {
+			background-color: white;
+		}
+
+		.btn-fechar-pedido {
+			background-color: DodgerBlue;
+		}
+	</style>
 </head>
-<style>
-.flex-container {
-	display: flex;
-	background-color: DodgerBlue;
-	flex-wrap: nowrap;
-}
-
-.flex-produtos {
-	display: flex;
-	background-color: DodgerBlue;
-	flex-wrap: nowrap;
-}
-
-#main-flex {
-	background-color: orange;
-	flex-grow: 10;
-}
-
-#side-flex {
-	background-color: red;
-	flex-basis: 30em;
-}
- 
-.flex-container > div {
-	margin: 10px;
-	padding: 20px;
-	background-color: gray;
-}
-	
-#produto-div {
-	margin-top: 0.83em;
-	margin-bottom: 0em;
-	margin-right: 0.5em;
-	background-color: white;
-	flex-grow: 1;
-	max-width: %;
-}
-
-#preco-div {
-	margin-top: 0.83em;
-	margin-bottom: 0em;
-	margin-left: 0.5em;
-	background-color: white;
-	flex-basis: 5em;
-}
-	
-#nome-produto {
-	font-size: 1.5em;
-	margin-top: 0em;
-	margin-bottom: 0.1em;
-	font-weight: bold;
-}
-
-#descricao-produto {
-	font-size: 0.85em;
-	margin-top: 0em;
-	margin-bottom: 0em;
-	font-weight: normal;
-}
-
-#preco-produto {
-	font-size: 2em;
-	margin-top: 0em;
-	margin-bottom: 0em;
-	font-weight: bold;
-}
-
-.btn-continue-comprando {
-	background-color: white;
-}
-
-.btn-fechar-pedido {
-	background-color: DodgerBlue;
-}
-
-
-</style>
 <body>
-<?php
+	<?php
 	include('includes/header.php');
-?>
+	?>
 	<main id="main">
 		<div class=flex-container>
 			<div id="main-flex">
@@ -142,7 +139,7 @@ foreach($produtos as $produto) {
 				<h3>Total (<?=$quantidade?> itens):</h3>
 				<h2>R$<?=$preco?></h2>
 				<div>
-					<button class="btn-continue-comprando">Continue comprando</button>
+					<button class="botoes">Continue comprando</button>
 					<button class="btn-fechar-pedido">Fechar pedido</button>
 				</div>
 			</div>
