@@ -75,7 +75,7 @@ $setores = array(
 		'produtos' => [
 			'agua-mineral' => 'Água Mineral',
 			'agua-gas' => 'Água com Gás',
-			'refri' => 'Refrigerante'
+			'refri' => 'Refrigerante',
 			'vinho' => 'Vinho'
 		]
 	]
