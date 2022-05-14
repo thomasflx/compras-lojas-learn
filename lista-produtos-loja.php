@@ -2,14 +2,14 @@
 
 // Define as variáveis
 $loja = null;
-$setor = null;
+$setor_chave = null;
 
 // Pega a variável da URL ex. lista-produtos-loja.php?loja=sonda&setor=mercearia
 if (!empty($_GET['loja'])) {
 	$loja = $_GET['loja'];
 }
 if (!empty($_GET['setor'])) {
-	$setor = $_GET['setor'];
+	$setor_chave = $_GET['setor'];
 }
 
 // Todos os setores e seus produtos
@@ -93,7 +93,6 @@ $setores = array(
 	?>
 	
 	<style>
-	
 	</style>
 </head>
 
@@ -102,9 +101,15 @@ $setores = array(
 	include('includes/header.php');
 	?>
 	
-	<?php if (isset($setores[$setor])) : ?>
+	<?php if (isset($setores[$setor_chave])) : ?>
 	
-		Eu sou um setor que existe
+		<h1><?=$setores[$setor_chave]['titulo']?></h1>
+		
+		<?php foreach($setores[$setor_chave]['produtos'] as $chave => $produto ) : ?>
+			<ul>
+				<li><?=$produto?></li>
+			</ul>
+		<?php endforeach; ?>
 		
 	<?php else : ?>
 	
@@ -112,8 +117,8 @@ $setores = array(
 		
 		<h2>Escolha o setor da sua compra:</h2>
 		
-		<?php foreach($setores as $c => $v) : ?>
-			<p><a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja?>&setor=<?=$c?>"><?=$v['titulo']?></a></p>
+		<?php foreach($setores as $chave => $setor) : ?>
+			<p><a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja?>&setor=<?=$chave?>"><?=$setor['titulo']?></a></p>
 		<?php endforeach; ?>
 	
 	<?php endif; ?>
