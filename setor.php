@@ -41,5 +41,9 @@ $produtos = [
 		}
 		?>
 		
+		
+</html>
+        
+	
 	</body>
 </html>
