@@ -41,6 +41,43 @@ $setores = array(
 			'pao-doce' => 'Pão doce',
 			'pao-queijo' => 'Pão de queijo'
 		]
+	],
+	'perfumaria' => [
+		'titulo' => 'Perfumaria',
+		'produtos' => [
+			'shampoo' => 'Shampoo',
+			'creme-hidrantante' => 'Creme Hidratante',
+			'algodao' => 'Algodão',
+			'creme-dental' => 'Creme Dental',
+			'esmalte' => 'Esmalte'
+		]
+	],
+	'acougue' => [
+		'titulo' => 'Açougue',
+		'produtos' => [
+			'aves' => 'Aves',
+			'bovinas' => 'Bovínas',
+			'suinas' => 'Suínas'
+		]
+	],
+	'hortifrut' => [
+		'titulo' => 'Coisa de Feira',
+		'produtos' => [
+			'maca-verde' => 'Maça Verde',
+			'banana' => 'Banana',
+			'abobora' => 'Abóbora',
+			'batata-doce' => 'Batata Doce',
+			'alface' => 'Alface'
+		]
+	],
+	'bebidas' => [
+		'titulo' => 'Bebidas Prontas',
+		'produtos' => [
+			'agua-mineral' => 'Água Mineral',
+			'agua-gas' => 'Água com Gás',
+			'refri' => 'Refrigerante'
+			'vinho' => 'Vinho'
+		]
 	]
 );
 
