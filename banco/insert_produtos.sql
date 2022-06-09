@@ -1,4 +1,3 @@
-
 insert into mercadoria (nome, marca, slug, descricao) values ('Arroz branco', 'pequeno grao', 'arroz-branco', '5 quilos');
 insert into mercadoria (nome, marca, slug, descricao) values ('Feijão', 'Feijão do Jão', 'feijao-preto', '1 quilo');
 insert into mercadoria (nome, marca, slug, descricao) values ('Azeite', 'Gota Da Lívia', 'azeite', 'Azeite Puro');
@@ -13,4 +12,3 @@ insert into mercadoria (nome, marca, slug, descricao) values ('Milho Verde', 'Qu
 insert into mercadoria (nome, marca, slug, descricao) values ('Ervilha', 'Quero', 'ervilha-enlatada', 'Ervilha pronta para servir');
 insert into mercadoria (nome, marca, slug, descricao) values ('Biscoito', 'É bolacha!', 'biscoito-morango', 'Biscoito de chocolate com recheio de morango');
 insert into mercadoria (nome, marca, slug, descricao) values ('Biscoito', 'Nesfit', 'biscoito-salgado', 'Biscoito integral com gergelim');
-    
