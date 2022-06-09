@@ -27,15 +27,22 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
+current_page=14
 FILE_NAME_0=19;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fteste.php;0;4
 FILE_NAME_1=1776;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Flista-produtos-loja.php;0;4
 FILE_NAME_2=0;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Findex.php;0;4
 FILE_NAME_3=0;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fincludes%2Fhead.php;0;4
-FILE_NAME_4=0;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Flista-lojas.php;0;4
+FILE_NAME_4=2;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Flista-lojas.php;0;4
 FILE_NAME_5=0;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fpagina-da-compra.php;0;4
 FILE_NAME_6=391;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fsetor.php;0;4
 FILE_NAME_7=6;PHP;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fprodutos-do-setor.php;0;4
+FILE_NAME_8=257;SQL;0;EUTF-8;1;1;0;%2Fhome%2Frayssa%2FDownloads%2Fteste.sql;0;4
+FILE_NAME_9=0;SQL;0;EUTF-8;1;1;0;%2Fhome%2Frayssa%2FDownloads%2Fteste%20%281%29.sql;0;4
+FILE_NAME_10=1205;SQL;0;EUTF-8;0;1;0;%2Fvar%2Fwww%2Fhtml%2Fteste-rayssa.sql;0;4
+FILE_NAME_11=0;SQL;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fbanco%2Fselect_produtos_loja.sql;0;4
+FILE_NAME_12=0;SQL;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fbanco%2Fcreate_table_produtos_loja.sql;0;4
+FILE_NAME_13=0;SQL;0;EUTF-8;1;1;0;%2Fvar%2Fwww%2Fhtml%2Fcompras-lojas-learn%2Fbanco%2Finsert_produtos.sql;0;4
+FILE_NAME_14=0;SQL;0;EUTF-8;1;1;0;%2Fhome%2Frayssa%2FDownloads%2Finsert_produtos.sql;0;4
 
 [VTE]
 last_dir=/home/rayssa
