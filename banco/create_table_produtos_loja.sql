@@ -17,3 +17,4 @@ create table produtos_loja (
 	foreign key(produto_id) references produtos(id) on delete cascade on update cascade,
 	foreign key(setor_id) references setores(id) on delete cascade on update cascade
 );
+insert into produtos_loja (preco, quantidade, validade) values ()
