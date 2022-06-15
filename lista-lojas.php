@@ -142,3 +142,29 @@ $lojas = array(
 		</div>
 	</body>
 </html>
+
+/*create table  lojas ( id int auto_increment not null,
+	nome text,
+	CEP int,    
+	numero int,
+	complemento int,
+	slug text,
+	descricao text default null comment'Campo de descrição',
+	
+	primary key(id)
+);           
+create table produtos_loja (
+	id int auto_increment,
+	produto_id text,
+	loja_id text, 
+	preco int,
+	quantidade int, 
+	validade date, 
+	setor_id text,
+	slug varchar(40) not null,
+	descricao text default null comment 'Campo de descrição',
+	
+	primary key(id)
+);*/  
+
+/* fazer insert into loja */

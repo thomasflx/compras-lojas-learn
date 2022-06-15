@@ -14,7 +14,23 @@ $detalhes = [
 ];
 
 ?>
+<?php
+$servername = "localhost";
+$dbname = "compras_lojas_learn";
+$username = "root";
+$password = "";
 
+try {
+	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+	// set the PDO error mode to exception
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
+	$produto_query = $conn->query("SELECT * FROM produtos WHERE id = $produto;");
+	$produto_banco = $produto_query->fetch();
+} catch(PDOException $e) {
+	echo "Connection failed: " . $e->getMessage();
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -44,7 +60,7 @@ $detalhes = [
 			<?php endif; ?>
 		
 			<ul>
-				<li>Valor: <?=$detalhes['valor']?></li>
+				<li>Valor: <?=$detalhes['valor']?></li> <!-- depois -->
 				<li>Descrição: <?=$detalhes['descricao']?></li>
 			</ul>
 		
