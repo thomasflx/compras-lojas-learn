@@ -26,7 +26,7 @@ try {
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	$produto_query = $conn->query("SELECT * FROM produtos WHERE id = $produto;");
-	$produto_banco = $produto_query->fetch();
+	$produto_banco = $produto_query->fetchAll(PDO::FETCH_ASSOC);
 	var_dump($produto_banco);
 } catch(PDOException $e) {
 	echo "Connection failed: " . $e->getMessage();
