@@ -27,6 +27,7 @@ try {
 	
 	$produto_query = $conn->query("SELECT * FROM produtos WHERE id = $produto;");
 	$produto_banco = $produto_query->fetch();
+	var_dump($produto_banco);
 } catch(PDOException $e) {
 	echo "Connection failed: " . $e->getMessage();
 }

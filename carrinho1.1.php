@@ -75,25 +75,20 @@ try {
 		}
 
 		#side-flex {
-			background-color: orange;
-			flex-direction: column;
-			flex-basis: 25%;
-		}
-		
-		#side-item {
 			background-color: red;
+			flex-basis: 30em;
 		}
 		 
 		.flex-container > div {
-			margin: 5px;
-			padding: 10px;
+			margin: 10px;
+			padding: 20px;
 			background-color: gray;
 		}
 			
 		#produto-div {
 			margin-top: 0.83em;
 			margin-bottom: 0em;
-			margin-right: 0.2em;
+			margin-right: 0.5em;
 			background-color: white;
 			flex-grow: 1;
 			max-width: %;
@@ -145,26 +140,24 @@ try {
 		<div class=flex-container>
 			<div id="main-flex">
 				<h1> Carrinho de compras</h1>
-					<?php foreach($produto_banco as $produto) : ?>
+					<?php foreach($produtos as $produto) : ?>
 						<div class=flex-produtos>
 							<div id="produto-div">
-								<h2 id="nome-produto">		<?=$produto['nome']?>		</h2>
+								<h2 id="nome-produto">		<?=$produto['titulo']?>		</h2>
 								<p id="descricao-produto">	<?=$produto['descricao']?>	</p>
 							</div>
 							<div id="preco-div">
-								<h2 id="preco-produto">									<!-- R$<?=$produto['preco']?> -->	</h2>
+								<h2 id="preco-produto">		R$<?=$produto['preco']?>		</h2>
 							</div>
 						</div>
 					<?php endforeach; ?>
 			</div>
 			<div id="side-flex">
-				<div id="side-item">
-					<h3>Total (<?=$quantidade?> itens):</h3>
-					<h2>R$<?=$preco?></h2>
-					<div>
-						<button class="botoes">Continue comprando</button>
-						<button class="btn-fechar-pedido">Fechar pedido</button>
-					</div>
+				<h3>Total (<?=$quantidade?> itens):</h3>
+				<h2>R$<?=$preco?></h2>
+				<div>
+					<button class="botoes">Continue comprando</button>
+					<button class="btn-fechar-pedido">Fechar pedido</button>
 				</div>
 			</div>
 		</div>
