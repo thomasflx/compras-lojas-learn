@@ -1,28 +1,38 @@
 <?php
+	$lojas = $_GET['lojas']; // Pega o valor de produto da URL
+?>
+<?php
+/** COMEÇA CONEXÃO COM O BANCO */
+$servername = "localhost";
+$dbname = "compras_lojas_learn";
+$username = "root";
+$password = "";
 
-$lojas = array(
-	array(
-		'titulo' => 'Lojas Mel',
-		'descricao' => 'Vende: De Papai Cruel tocando trompete, a tudo entre de R$1,00 a R$99,00.',
-		'imagem' => 'assets/img/IMG-20220120-WA0033.jpg',
-		'alt' => 'Fachada das lojas mel desenhada'
-	),
-	array(
-		'titulo' => 'Feirinha do Zé:',
-		'descricao' => 'Vende: De frutas e verduras, a brinquedos de má qualidade sem garantia alguma.',
-		'imagem' => 'http://localhost/compras-lojas-learn/assets/img/ja-ma--gOUx23DNks-unsplash.jpg',
-		'alt'	=> 'Muitas frutas e legumes orgânicos, para satisfazer sua curiosidade tem mais legumes do que frutas'
-	),
-	array(
-		'titulo' => 'Padaria Thomas e Seus Amigos:',
-		'descricao' => 'Vende: De pão, a bilhete do bingo de domingo.',
-		'imagem' => 'http://localhost/compras-lojas-learn/assets/img/cptm.jpg',
-		'alt' => 'O carro da CPTM passando em São Paulo'
-	)
-);
+try {
+	// Cria uma conexão
+	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
-//echo $lojas[0]['titulo'];
+	// Arruma o retorno de erros do banco
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
+	// Query
+	// Alterar para ajustar a página
+	$lojas_query = $conn->prepare("SELECT * FROM lojas WHERE id = :loja;");
+	$lojas_query->execute(['loja' => $lojas]);
 
+	// Retorna todas as linhas da busca (descomentar)
+	// $produto_banco = $lojas_query->fetchAll(PDO::FETCH_ASSOC);
+
+	// Retorna a primeira linha da busca
+	$lojas_banco = $lojas_query->fetch(PDO::FETCH_ASSOC);
+
+	// Mostra os dados da variável e o tipo de dado
+	// var_dump($lojas_banco);
+} 
+catch(PDOException $e) {
+	echo "Connection failed:" . $e->getMessage();
+}
+/** TERMINA CONEXÃO COM O BANCO */
 ?>
 
 <!DOCTYPE html>
@@ -117,28 +127,22 @@ $lojas = array(
 		?>
 		
 		<div id="lojas">
-			<?php foreach($lojas as $loja) : ?>
 				<div class="loja">
 					<div class="loja-info">
 						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-							<?php 
-							echo $loja['titulo'];
-							?>
+							<?=$lojas_banco['nome']?>
 						</a>
 						<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
 							<p>
-								<?php 
-								echo $loja['descricao'];
-								?>
+								<?=$lojas_banco['descricao']?>
 							</p>
 						</a>
 					</div>
-					<img
-						src="<?=$loja['imagem']?>"
-						alt="<?=$loja['alt']?>"
-					>
+					<!--<img
+						src=""
+						alt=""
+					>-->
 				</div>
-			<?php endforeach; ?>
 		</div>
 	</body>
 </html>

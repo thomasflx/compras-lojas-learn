@@ -9,7 +9,8 @@ if ( ! empty($_GET['produto'])) {
 ?>
 <?php
 /** COMEÇA CONEXÃO COM O BANCO */
-$servername = "mysqldb";
+/**$servername = "mysqldb";*/
+$servername = "localhost";
 $dbname = "compras_lojas_learn";
 $username = "root";
 $password = "";
