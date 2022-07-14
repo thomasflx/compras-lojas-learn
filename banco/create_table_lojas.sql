@@ -12,3 +12,4 @@ create table lojas (
 	primary key(id),
 	unique(slug)
 );
+ 
