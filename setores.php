@@ -27,6 +27,25 @@ if ($loja == 'lojas-mel') {
 }
 
 ?>
+<?php
+$servername = "localhost";
+$dbname = "compras_lojas_learn";
+$username = "phpmyadmin";
+$password = "123";
+
+try {
+	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$setor_query = $conn->prepare("SELECT * FROM setores WHERE id = :set;");
+	$setor_query->execute(['set' => $setor]);
+
+	$setor_banco = $setor_query->fetch(PDO::FETCH_ASSOC);
+
+} catch(PDOException $e) {
+	echo "Connection failed: " . $e->getMessage();
+}	
+?>
 
 <!DOCTYPE html>
 
