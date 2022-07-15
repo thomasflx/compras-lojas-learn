@@ -1,34 +1,6 @@
 <?php
-// Produtos no carrinho
-$produtos = [
-	[
-		'titulo' => 'Escova de dentes',
-		'preco' => 5.99,
-		'descricao' => 'Sint laboriosam vel nam. Consequatur laudantium repellat sunt sit nisi minus et. Dolorem mollitia ab cum repudiandae dolore fugit perspiciatis corrupti. Illum voluptas ut nobis.'
-	],
-	[
-		'titulo' => 'Alface',
-		'preco' => 4.50,
-		'descricao' => 'Consequatur et consequatur veniam voluptas. Laboriosam est a aut fuga. Et similique expedita animi eum et necessitatibus necessitatibus. Dolore doloribus libero quam incidunt nihil blanditiis natus. Blanditiis qui est repudiandae ad.'
-	],
-	[
-		'titulo' => 'Feijão',
-		'preco' => 8.99,
-		'descricao' => 'Reprehenderit asperiores et laboriosam sit autem. Temporibus et iure eius debitis non accusantium sed doloremque. Commodi eligendi voluptas optio ut debitis quae sit omnis. Ut ut quidem architecto sed.'
-	],
-	[
-		'titulo' => 'Feijão',
-		'preco' => 8.99,
-		'descricao' => 'Rerum fugiat praesentium asperiores assumenda ipsam aut maxime cupiditate. Saepe iste aspernatur quas dolores. Ab consequatur tempore adipisci inventore deleniti dolorum. Perferendis dolor sequi natus eos aut voluptates qui rerum. Ratione eos cumque accusamus ex amet.'
-	]
-];
 
-$quantidade = count($produtos);
-
-$preco = 0;
-foreach($produtos as $produto) {
-	$preco = $preco + $produto['preco'];
-}
+$produtos_no_carrinho = [1, 2, 3];
 
 $servername = "localhost";
 $dbname = "compras_lojas_learn";
@@ -45,6 +17,11 @@ try {
 	var_dump($produto_banco);
 } catch(PDOException $e) {
 	echo "Connection failed: " . $e->getMessage();
+}
+
+$preco = 0;
+foreach($produtos as $produto) {
+	$preco = $preco + $produto['preco'];
 }
 
 ?>
@@ -152,6 +129,7 @@ try {
 								<p id="descricao-produto">	<?=$produto['descricao']?>	</p>
 							</div>
 							<div id="preco-div">
+								<?php // todo: Pegar o preço do banco, tabela produtos_loja ?>
 								<h2 id="preco-produto">									<!-- R$<?=$produto['preco']?> -->	</h2>
 							</div>
 						</div>
@@ -159,6 +137,7 @@ try {
 			</div>
 			<div id="side-flex">
 				<div id="side-item">
+					<?php // todo: pegar a quantidade do banco ?>
 					<h3>Total (<?=$quantidade?> itens):</h3>
 					<h2>R$<?=$preco?></h2>
 					<div>
