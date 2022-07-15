@@ -1,5 +1,5 @@
 <?php
-	$lojas = $_GET['lojas']; // Pega o valor de produto da URL
+	$loja = $_GET['loja']; // Pega o valor de produto da URL
 ?>
 <?php
 /** COMEÇA CONEXÃO COM O BANCO */
@@ -17,17 +17,17 @@ try {
 	
 	// Query
 	// Alterar para ajustar a página
-	$lojas_query = $conn->prepare("SELECT * FROM lojas WHERE id = :loja;");
-	$lojas_query->execute(['loja' => $lojas]);
+	$lojas_query = $conn->prepare("SELECT * FROM lojas");
+	$lojas_query->execute();
 
 	// Retorna todas as linhas da busca (descomentar)
-	// $produto_banco = $lojas_query->fetchAll(PDO::FETCH_ASSOC);
+	$lojas_banco = $lojas_query->fetchAll(PDO::FETCH_ASSOC);
 
 	// Retorna a primeira linha da busca
-	$lojas_banco = $lojas_query->fetch(PDO::FETCH_ASSOC);
+	// $lojas_banco = $lojas_query->fetch(PDO::FETCH_ASSOC);
 
 	// Mostra os dados da variável e o tipo de dado
-	// var_dump($lojas_banco);
+	var_dump($lojas_banco);
 } 
 catch(PDOException $e) {
 	echo "Connection failed:" . $e->getMessage();
@@ -127,6 +127,7 @@ catch(PDOException $e) {
 		?>
 		
 		<div id="lojas">
+			<?php // todo: fazer foreach ?>
 				<div class="loja">
 					<div class="loja-info">
 						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
