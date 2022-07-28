@@ -1,5 +1,5 @@
 <?php
-	$loja = $_GET['loja']; // Pega o valor de produto da URL
+	$lojas = $_GET['loja']; // Pega o valor de produto da URL
 ?>
 <?php
 /** COMEÇA CONEXÃO COM O BANCO */
@@ -131,12 +131,14 @@ catch(PDOException $e) {
 				<div class="loja">
 					<div class="loja-info">
 						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-							<?=$lojas_banco['nome']?>
+							<?php foreach ($lojas as $lojas_banco => $loja) : ?>
+								<?=$lojas_banco['nome']?>
 						</a>
 						<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-							<p>
-								<?=$lojas_banco['descricao']?>
-							</p>
+								<p>
+									<?=$lojas_banco['descricao']?>
+								</p>
+							<?php endforeach; ?>
 						</a>
 					</div>
 					<!--<img
