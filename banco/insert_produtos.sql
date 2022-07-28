@@ -12,3 +12,15 @@ insert into produtos (nome, marca, slug, descricao) values ('Milho Verde', 'Quer
 insert into produtos (nome, marca, slug, descricao) values ('Ervilha', 'Quero', 'ervilha-enlatada', 'Ervilha pronta para servir');
 insert into produtos (nome, marca, slug, descricao) values ('Biscoito', 'É bolacha!', 'biscoito-morango', 'Biscoito de chocolate com recheio de morango');
 insert into produtos (nome, marca, slug, descricao) values ('Biscoito', 'Nesfit', 'biscoito-salgado', 'Biscoito integral com gergelim');
+insert into produtos (nome, marca, slug, descricao) values ('Pão Francês', 'Da Casa', 'pao-frances', 'Pão fresquinho para manhã ou tarde');
+insert into produtos (nome, marca, slug, descricao) values ('Rosquinha', 'Da Casa', 'rosquinha-acucar', 'Rosquinha Docinha');
+insert into produtos (nome, marca, slug, descricao) values ('Pão de queijo', 'Vó da fazenda', 'pao-queijo', 'três tipos de queijo no seu pão');
+insert into produtos (nome, marca, slug, descricao) values ('Maça', 'fuji', 'maça-vermelha', 'Valor cobrado em Kg');
+insert into produtos (nome, marca, slug, descricao) values ('Couve', 'Da roça', 'couve-manteiga', '2.50 o maço');
+insert into produtos (nome, marca, slug, descricao) values ('Abacate', 'Da roça', 'abacate-avocado', '2 por 5, 4 por 10');
+insert into produtos (nome, marca, slug, descricao) values ('Costela', 'Friboi','costela-bovina', 'Peça perfeita para seu churras!');
+insert into produtos (nome, marca, slug, descricao) values ('Linguiça', 'Aurora', 'linguica-calabresa', 'Disponivel para pesar ou na bandeja');
+insert into produtos (nome, marca, slug, descricao) values ('Shampoo', 'Palmolive', 'shampoo', 'Para todos os tipos de cabelo');
+insert into produtos (nome, marca, slug, descricao) values ('Sabonete', 'Francis', 'sabonete-barra', 'Cheiro de flores');
+insert into produtos (nome, marca, slug, descricao) values ('Água com gás', 'São Lourenço', 'agua-gas', 'Água gaserificada naturalmente');
+insert into produtos (nome, marca, slug, descricao) values ('Fanta Laranja', 'Coca Cola', 'fanta-cola', 'Se a Fanta quebrar, a Coca Cola');
