@@ -1,6 +1,6 @@
 <?php
 /** COMEÇA CONEXÃO COM O BANCO */
-$servername = "localhost";
+$servername = "mysqldb";
 $dbname = "compras_lojas_learn";
 $username = "root";
 $password = "";

@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 // Define as variáveis
 $loja_id = null;
@@ -10,27 +10,32 @@ if (!empty($_GET['loja'])) {
 
 ?>
 <?php
-$servername = "localhost";
+$servername = "mysqldb";
 $dbname = "compras_lojas_learn";
-$username = "phpmyadmin";
-$password = "123";
+$username = "root";
+$password = "";
 
 try {
 	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	// Busca os produtos da loja
-	$produtos_loja_query = $conn->prepare("SELECT * FROM produtos_loja WHERE loja_id = :id;");
+	$setores_loja_query = $conn->prepare("SELECT DISTINCT(setores.nome) as nome, setores.id as id
+		FROM produtos_loja
+		inner join setores on produtos_loja.setor_id = setores.id 
+		WHERE loja_id = :id;");
 	$parametro = array('id' => $loja_id);
-	$produtos_loja_query->execute($parametro);
-	$produtos_loja_banco = $produtos_loja_query->fetchAll(PDO::FETCH_ASSOC);
+	$setores_loja_query->execute($parametro);
+	$setores_loja_banco = $setores_loja_query->fetchAll(PDO::FETCH_ASSOC);
+
+
 
 	// Busca o nome da loja
 	$loja_nome_query = $conn->prepare("SELECT nome FROM lojas WHERE id = :id;");
 	$loja_nome_query->execute(['id' => $loja_id]);
 	$loja_nome_banco = $loja_nome_query->fetch(PDO::FETCH_ASSOC);
 
-	// var_dump($loja_nome_banco);
+	var_dump($setores_loja_banco);
 
 } catch(PDOException $e) {
 	echo "Connection failed: " . $e->getMessage();
@@ -62,10 +67,14 @@ try {
 	<?php endif; ?>
 	
 	<h2>Escolha o setor da sua compra:</h2>
-	
+
 	<?php // todo: buscar o setor no banco e arrumar o foreach ?>
-	<?php foreach($setores as $chave => $setor) : ?>
-		<p><a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja_id?>&setor=<?=$chave?>"><?=$setor?></a></p>
+	<?php foreach($setores_loja_banco as $valor) : ?>
+		<p>
+			<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja_id?>&setor=<?=$valor['id']?>">
+				<?=$valor['nome']?>
+			</a>
+		</p>
 	<?php endforeach; ?>
 </body>
 </html>
