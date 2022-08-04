@@ -127,22 +127,19 @@ catch(PDOException $e) {
 			<?php // todo: fazer foreach ?>
 				<div class="loja">
 					<div class="loja-info">
-						<?php foreach ($lojas_banco as $loja) : ?>
-							<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-								<?=$loja['nome']?>
-							</a>
-							<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-								<p>
-									<?=$loja['descricao']?>
-								</p>
-							</a>
-						<?php endforeach; ?>
+					<?php foreach ($lojas_banco as $loja) : ?>
+						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">							
+							<?=$loja['nome']?>
+						</a>
+						<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+							<p>
+								<?=$loja['descricao']?>
+							</p>
+						</a>
 					</div>
-					<!--<img
-						src=""
-						alt=""
-					>-->
+						<img src="https://thumbs.dreamstime.com/b/texto-vermelho-do-selo-do-exemplo-43363006.jpg" alt="Exemplo de imagem.">
 				</div>
+				<?php endforeach; ?>
 		</div>
 	</body>
 </html>
