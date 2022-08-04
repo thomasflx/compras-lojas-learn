@@ -1,7 +1,4 @@
 <?php
-	$lojas = $_GET['loja']; // Pega o valor de produto da URL
-?>
-<?php
 /** COMEÇA CONEXÃO COM O BANCO */
 $servername = "localhost";
 $dbname = "compras_lojas_learn";
@@ -130,22 +127,19 @@ catch(PDOException $e) {
 			<?php // todo: fazer foreach ?>
 				<div class="loja">
 					<div class="loja-info">
-						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-							<?php foreach ($lojas as $lojas_banco => $loja) : ?>
-								<?=$lojas_banco['nome']?>
+					<?php foreach ($lojas_banco as $loja) : ?>
+						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">							
+							<?=$loja['nome']?>
 						</a>
 						<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-								<p>
-									<?=$lojas_banco['descricao']?>
-								</p>
-							<?php endforeach; ?>
+							<p>
+								<?=$loja['descricao']?>
+							</p>
 						</a>
 					</div>
-					<!--<img
-						src=""
-						alt=""
-					>-->
+						<img src="https://thumbs.dreamstime.com/b/texto-vermelho-do-selo-do-exemplo-43363006.jpg" alt="Exemplo de imagem.">
 				</div>
+				<?php endforeach; ?>
 		</div>
 	</body>
 </html>
