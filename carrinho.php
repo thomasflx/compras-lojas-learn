@@ -2,7 +2,7 @@
 
 $produtos_no_carrinho = [1, 2, 3];
 
-$servername = "localhost";
+$servername = "mysqldb";
 $dbname = "compras_lojas_learn";
 $username = "root";
 $password = "";
@@ -12,7 +12,9 @@ try {
 	// set the PDO error mode to exception
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
-	$produto_query = $conn->query("SELECT * FROM produtos;");
+	// todo: pegar os ids da variavel $produtos_no_carrinho - Wagner
+	// todo: fazer o innerjoin com a tabela produtos_loja
+	$produto_query = $conn->query("SELECT * FROM produtos WHERE id in (1,2,3);");
 	$produto_banco = $produto_query->fetchAll(PDO::FETCH_ASSOC);
 	var_dump($produto_banco);
 } catch(PDOException $e) {
