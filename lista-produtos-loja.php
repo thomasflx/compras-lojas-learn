@@ -12,6 +12,7 @@ if (!empty($_GET['setor'])) {
 	$setor_chave = $_GET['setor'];
 }
 
+// todo: Conectar e buscar dados do banco - Abner
 // Todos os setores e seus produtos
 $setores = array(
 	'mercearia' => [

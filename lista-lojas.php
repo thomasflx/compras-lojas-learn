@@ -24,7 +24,7 @@ try {
 	// $lojas_banco = $lojas_query->fetch(PDO::FETCH_ASSOC);
 
 	// Mostra os dados da variável e o tipo de dado
-	var_dump($lojas_banco);
+	// var_dump($lojas_banco);
 } 
 catch(PDOException $e) {
 	echo "Connection failed:" . $e->getMessage();
@@ -38,46 +38,39 @@ catch(PDOException $e) {
 		<?php
 		include('includes/head.php');
 		?>
-		
 		<style>
-			
-			body {
-				background: #FFD4D4;				
-			}
-			
-			img {
+			#lojas .loja .logo-loja {
 				width: 300px;
 				height: 200px;
 				border: 5px ridge gray;
 				margin-bottom: 7px;
 				object-fit: cover;
 			}
-			
-			p {
-				color: black;
-			}
-			
-			a:link {
+
+			#lojas .loja {
 				text-decoration: none;
 			}
-			
-			a:visited {
-				color: blue;
+			#lojas .loja:visited {
+				color: inherit;
 			}
-			
-			a:houver {
-				text-decoration: underline;
-				backgrund: blue;				
+			#lojas .loja:hover, #lojas .loja:visited:hover {
+				background: #ddd;
 			}
-			
-			a:active {
-				background: red;
+			#lojas .loja:active, #lojas .loja:visited:active {
 			}
-			
-			a:focus {
-				background: green;
+			#lojas .loja:focus, #lojas .loja:visited:focus {
 			}
-			
+
+			#lojas .loja .titulo-loja {
+				text-shadow: 2px 2px #ff0000;
+				font-size: 1.5em;
+			}
+
+			#lojas .loja .loja-subtitulo {
+				font-size: 20px;
+				margin: center;
+			}
+
 			/* Caixa de testes com flexbox */
 			#test-flex p {
 				width: 200px;
@@ -85,15 +78,15 @@ catch(PDOException $e) {
 				background: #ddd;
 				margin: 15px;
 			}
-			
+
 			#test-flex {
 				display: none;
 				height: 100vh;
 				flex-wrap: wrap;
 				align-items: center;
 				justify-content: end;
-			}				
-			
+			}
+
 			/* Cotrole das lojas */
 			.loja {
 				display: flex;
@@ -101,45 +94,31 @@ catch(PDOException $e) {
 				border-bottom: 1px solid #333;
 				justify-content: space-between;
 			}
-			
+
 			.lojas {
 				margin: auto;
 			}
-			
-			.titulo-loja {
-				text-shadow: 2px 2px #ff0000;
-				font-size: 2em;
-			}
-			
-			.loja-subtitulo {
-				font-size: 20px;
-				margin: center;
-			}		
-			
 		</style>
 	</head>
 	<body>
 		<?php
 		include('includes/header.php');
 		?>
-		
-		<div id="lojas">
-			<?php // todo: fazer foreach ?>
-				<div class="loja">
-					<div class="loja-info">
-					<?php foreach ($lojas_banco as $loja) : ?>
-						<a class="titulo-loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">							
-							<?=$loja['nome']?>
-						</a>
-						<a class="loja-subtitulo" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
-							<p>
+		<main id="main">
+			<h1>Conheça nossas Lojas</h1>
+			<div id="lojas">
+				<?php foreach ($lojas_banco as $loja) : ?>
+					<a class="loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
+						<div class="loja-info">
+							<h2 class="titulo-loja"><?=$loja['nome']?></h2>
+							<p class="loja-subtitulo">
 								<?=$loja['descricao']?>
 							</p>
-						</a>
-					</div>
-						<img src="https://thumbs.dreamstime.com/b/texto-vermelho-do-selo-do-exemplo-43363006.jpg" alt="Exemplo de imagem.">
-				</div>
+						</div>
+						<img class="logo-loja" src="http://localhost/compras-lojas-learn/assets/img/exemplo-43363006.jpg" alt="Exemplo de imagem.">
+					</a>
 				<?php endforeach; ?>
-		</div>
+			</div>
+		</main>
 	</body>
 </html>
