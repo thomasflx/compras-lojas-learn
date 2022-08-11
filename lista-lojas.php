@@ -1,6 +1,6 @@
 <?php
 /** COMEÇA CONEXÃO COM O BANCO */
-$servername = "mysqldb";
+$servername = "localhost";
 $dbname = "compras_lojas_learn";
 $username = "root";
 $password = "";
@@ -45,6 +45,11 @@ catch(PDOException $e) {
 				border: 5px ridge gray;
 				margin-bottom: 7px;
 				object-fit: cover;
+			}
+			#tittle-pag {
+				text-align: center;
+				color: #ff0000;
+				text-shadow: 2px 2px black;
 			}
 
 			#lojas .loja {
@@ -105,7 +110,7 @@ catch(PDOException $e) {
 		include('includes/header.php');
 		?>
 		<main id="main">
-			<h1>Conheça nossas Lojas</h1>
+			<h1 id="tittle-pag">Conheça nossas Lojas</h1>
 			<div id="lojas">
 				<?php foreach ($lojas_banco as $loja) : ?>
 					<a class="loja" href="http://localhost/compras-lojas-learn/lista-produtos-loja.php">
