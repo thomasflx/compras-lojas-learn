@@ -13,6 +13,11 @@ if (!empty($_GET['setor'])) {
 }
 
 // todo: Conectar e buscar dados do banco - Abner
+// todo: utilizar o include do arquivo db.php
+
+// todo: Adicionar a coluna de imagem no banco
+// todo: Incluir o arquivo init.php e utilizar a variável $siteurl
+
 // Todos os setores e seus produtos
 $setores = array(
 	'mercearia' => [
@@ -93,6 +98,7 @@ $setores = array(
 	include('includes/head.php');
 	?>
 	
+	<!-- todo: deixar a página tinindo -->
 	<style>
 	</style>
 </head>
