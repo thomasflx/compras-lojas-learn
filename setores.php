@@ -10,36 +10,34 @@ if (!empty($_GET['loja'])) {
 
 ?>
 <?php
+// todo: Adicionar a coluna de imagem no banco
+// todo: Incluir o arquivo init.php e utilizar a variável $siteurl
+// todo: retirar o código de conexão com o banco do arquivo e fazer o include do db.php
+
 $servername = "mysqldb";
 $dbname = "compras_lojas_learn";
 $username = "root";
 $password = "";
 
-try {
-	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	// Busca os produtos da loja
-	$setores_loja_query = $conn->prepare("SELECT DISTINCT(setores.nome) as nome, setores.id as id
-		FROM produtos_loja
-		inner join setores on produtos_loja.setor_id = setores.id 
-		WHERE loja_id = :id;");
-	$parametro = array('id' => $loja_id);
-	$setores_loja_query->execute($parametro);
-	$setores_loja_banco = $setores_loja_query->fetchAll(PDO::FETCH_ASSOC);
+// Busca os produtos da loja
+$setores_loja_query = $conn->prepare("SELECT DISTINCT(setores.nome) as nome, setores.id as id
+	FROM produtos_loja
+	inner join setores on produtos_loja.setor_id = setores.id 
+	WHERE loja_id = :id;");
+$parametro = array('id' => $loja_id);
+$setores_loja_query->execute($parametro);
+$setores_loja_banco = $setores_loja_query->fetchAll(PDO::FETCH_ASSOC);
 
+// Busca o nome da loja
+$loja_nome_query = $conn->prepare("SELECT nome FROM lojas WHERE id = :id;");
+$loja_nome_query->execute(['id' => $loja_id]);
+$loja_nome_banco = $loja_nome_query->fetch(PDO::FETCH_ASSOC);
 
+var_dump($setores_loja_banco);
 
-	// Busca o nome da loja
-	$loja_nome_query = $conn->prepare("SELECT nome FROM lojas WHERE id = :id;");
-	$loja_nome_query->execute(['id' => $loja_id]);
-	$loja_nome_banco = $loja_nome_query->fetch(PDO::FETCH_ASSOC);
-
-	var_dump($setores_loja_banco);
-
-} catch(PDOException $e) {
-	echo "Connection failed: " . $e->getMessage();
-}	
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +48,7 @@ try {
 	<?php
 	include('includes/head.php');
 	?>
-	
+	<!-- todo: Adicionar estilo à página -->
 	<style>
 	</style>
 </head>
