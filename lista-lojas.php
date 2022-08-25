@@ -36,7 +36,7 @@ $lojas_banco = $lojas_query->fetchAll(PDO::FETCH_ASSOC);
 							</p>
 						</div>
 						<?php if (!empty($loja['imagem'])): ?>
-							<img class="logo-loja" src="<?=$siteurl . $loja['imagem']?>" alt="Exemplo de imagem.">
+							<img class="logo-loja" src="<?=$siteurl . $loja['imagem']?>" alt="Imagem representativa da loja.">
 						<?php endif; ?>
 					</a>
 				<?php endforeach; ?>
