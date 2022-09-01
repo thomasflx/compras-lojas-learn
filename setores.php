@@ -1,5 +1,5 @@
  <?php
-
+include('includes/db.php');
 // Define as variáveis
 $loja_id = null;
 
@@ -14,13 +14,6 @@ if (!empty($_GET['loja'])) {
 // todo: Incluir o arquivo init.php e utilizar a variável $siteurl
 // todo: retirar o código de conexão com o banco do arquivo e fazer o include do db.php
 
-$servername = "mysqldb";
-$dbname = "compras_lojas_learn";
-$username = "root";
-$password = "";
-
-$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Busca os produtos da loja
 $setores_loja_query = $conn->prepare("SELECT DISTINCT(setores.nome) as nome, setores.id as id
