@@ -1,5 +1,6 @@
  <?php
 include('includes/db.php');
+include('includes/init.php');
 // Define as variáveis
 $loja_id = null;
 
@@ -43,6 +44,14 @@ var_dump($setores_loja_banco);
 	?>
 	<!-- todo: Adicionar estilo à página -->
 	<style>
+		h1 {
+			color:rgb (0,232,15); 
+			font-family:"fantasy", sans-serif;
+		}
+		h2 {
+			font-family: "fantasy" , sans-serif;
+		}
+
 	</style>
 </head>
 
@@ -58,11 +67,11 @@ var_dump($setores_loja_banco);
 	<?php endif; ?>
 	
 	<h2>Escolha o setor da sua compra:</h2>
-
+	<link rel="stylesheet" type="text/css" href="<?=$siteurl . '/assets/css/lojas.css'?>" />
 	<?php // todo: buscar o setor no banco e arrumar o foreach ?>
 	<?php foreach($setores_loja_banco as $valor) : ?>
 		<p>
-			<a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja_id?>&setor=<?=$valor['id']?>">
+			<a href= "<?$siteurl?>/lista-produtos-loja.php?loja=<?=$loja_id?>&setor=<?=$valor['id']?>">
 				<?=$valor['nome']?>
 			</a>
 		</p>
