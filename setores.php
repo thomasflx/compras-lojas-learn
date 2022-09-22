@@ -45,7 +45,7 @@ var_dump($setores_loja_banco);
 	<!-- todo: Adicionar estilo à página -->
 	<style>
 		h1 {
-			color:rgb (0,232,15); 
+			color: rgb(0,232,15); 
 			font-family:"fantasy", sans-serif;
 		}
 		h2 {
@@ -71,7 +71,7 @@ var_dump($setores_loja_banco);
 	<?php // todo: buscar o setor no banco e arrumar o foreach ?>
 	<?php foreach($setores_loja_banco as $valor) : ?>
 		<p>
-			<a href= "<?$siteurl?>/lista-produtos-loja.php?loja=<?=$loja_id?>&setor=<?=$valor['id']?>">
+			<a href= "<?$siteurl?>/lista-produtos-setor.php?loja=<?=$loja_id?>&setor=<?=$valor['id']?>">
 				<?=$valor['nome']?>
 			</a>
 		</p>

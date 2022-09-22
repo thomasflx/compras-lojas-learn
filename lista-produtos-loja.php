@@ -18,6 +18,8 @@ if (!empty($_GET['setor'])) {
 // todo: Conectar e buscar dados do banco - Abner
 // todo: Utilizar a variável $siteurl
 
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -41,12 +43,15 @@ if (!empty($_GET['setor'])) {
 	include('includes/header.php');
 	?>
 	
+	<!-- Atualizar para caso o retorno do banco seja vazio -->
 	<?php if (isset($setores[$setor_chave])) : ?>
 	
+		<!-- Atualizar para o nome da loja retornados do banco -->
 		<h1><?=$setores[$setor_chave]['titulo']?></h1>
 		
 		<?php foreach($setores[$setor_chave]['produtos'] as $chave => $produto ) : ?>
 			<ul>
+				<!-- Pegar o nome do produto -->
 				<li><?=$produto?></li>
 			</ul>
 			<?php if (!empty($loja['imagem'])): ?>
@@ -55,14 +60,9 @@ if (!empty($_GET['setor'])) {
 		<?php endforeach; ?>
 		
 	<?php else : ?>
-	
-		<h1>Todas as Seções</h1>
 		
-		<h2>Escolha o setor da sua compra:</h2>
-		
-		<?php foreach($setores as $chave => $setor) : ?>
-			<p><a href="http://localhost/compras-lojas-learn/lista-produtos-loja.php?loja=<?=$loja?>&setor=<?=$chave?>"><?=$setor['titulo']?></a></p>
-		<?php endforeach; ?>
+		<!-- Retorno caso nenhuma loja seja encontrada -->
+		<!-- Trazer 8 produtos aleatórios -->
 	
 	<?php endif; ?>
 </body>
