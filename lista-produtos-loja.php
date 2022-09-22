@@ -98,7 +98,7 @@ $setores = array(
 	include('includes/head.php');
 	?>
 	
-	<!-- todo: deixar a página tinindo -->
+	<!-- todo: deixar a página tinindo kkkk-->
 	<style>
 	</style>
 </head>
