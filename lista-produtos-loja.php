@@ -1,5 +1,5 @@
 <?php
-
+include('includes/db.php');
 // Define as variáveis
 $loja = null;
 $setor_chave = null;

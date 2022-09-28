@@ -46,7 +46,7 @@ var_dump($setores_loja_banco);
 	<style>
 		h1 {
 			color:rgb (0,232,15); 
-			font-family:"fantasy", sans-serif;
+			font-family:"Open Sans", sans-serif;
 		}
 		h2 {
 			font-family: "fantasy" , sans-serif;
