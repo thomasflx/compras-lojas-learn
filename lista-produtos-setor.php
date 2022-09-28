@@ -1,6 +1,8 @@
 <?php
 
 // Incluir os arquivos db.php e init.php
+include('includes/init.php');
+include('includes/db.php');
 
 // Define as variáveis
 $loja = null;
@@ -15,6 +17,8 @@ if (!empty($_GET['setor'])) {
 }
 
 // todo: Conectar e buscar dados do banco
+
+$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // todo: Utilizar a variável $siteurl
 
 ?>
