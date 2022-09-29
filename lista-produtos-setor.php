@@ -17,7 +17,10 @@ if (!empty($_GET['setor'])) {
 }
 
 // todo: Conectar e buscar dados do banco
-
+$servername = "localhost";
+$dbname = "compras_lojas_learn";
+$username = "phpmyadmin";
+$password = "123";
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // todo: Utilizar a variável $siteurl
 
