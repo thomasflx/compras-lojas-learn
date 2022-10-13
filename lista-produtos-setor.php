@@ -1,6 +1,8 @@
 <?php
 
 // Incluir os arquivos db.php e init.php
+include('includes/init.php');
+include('includes/db.php');
 
 // Define as variáveis
 $loja = null;
@@ -13,9 +15,21 @@ if (!empty($_GET['loja'])) {
 if (!empty($_GET['setor'])) {
 	$setor_chave = $_GET['setor'];
 }
-
-// todo: Conectar e buscar dados do banco
 // todo: Utilizar a variável $siteurl
+
+$produtos_setor_query = $conn->prepare("SELECT produtos.nome AS produto, setores.nome AS setor
+	FROM produtos_loja
+	INNER JOIN setores ON setores.id = produtos_loja.id
+	INNER JOIN produtos ON produtos.id = produtos_loja.id
+	WHERE produtos_loja.setor_id = :id
+	ORDER BY produtos.nome ASC
+	LIMIT 1 OFFSET 0;
+");
+$parametro = array('id' => $setor_chave);
+$produtos_setor_query->execute($parametro);
+$produtos_setor_fetch = $produtos_setor_query->fetchAll(PDO::FETCH_ASSOC);
+
+var_dump($produtos_setor_fetch);
 
 ?>
 
@@ -57,11 +71,13 @@ if (!empty($_GET['setor'])) {
 				<img class="img-prod" src="<?=$siteurl . $loja['imagem']?>" alt="Imagem representativa da loja.">
 			<?php endif; ?>
 		<?php endforeach; ?>
+
+
 		
 	<?php else : ?>
 		
 		<!-- Retorno caso nenhuma loja seja encontrada -->
-		<!-- Trazer 8 produtos aleatórios -->
+		<!-- Trazer 8 produtos aleatórios (RANDOM - order by - limit) -->
 	
 	<?php endif; ?>
 </body>
