@@ -4,11 +4,10 @@ include('includes/init.php');
 include('includes/db.php');
 
 // Query
-// Alterar para ajustar a página
 $lojas_query = $conn->prepare("SELECT * FROM lojas");
 $lojas_query->execute();
 
-// Retorna todas as linhas da busca (descomentar)
+// Retorna todas as linhas da busca
 $lojas_banco = $lojas_query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

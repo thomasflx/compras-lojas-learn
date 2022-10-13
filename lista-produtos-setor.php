@@ -6,7 +6,7 @@
 $loja = null;
 $setor_chave = null;
 
-// Pega a variável da URL ex. lista-produtos-loja.php?loja=sonda&setor=mercearia
+// Pega a variável da URL ex. lista-produtos-loja.php?loja=sonda&setor=mercearia 
 if (!empty($_GET['loja'])) {
 	$loja = $_GET['loja'];
 }
