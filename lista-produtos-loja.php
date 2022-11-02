@@ -5,16 +5,20 @@ include('includes/db.php');
 
 // Define as variáveis
 $loja = null;
-$setor_chave = null;
 
 // Pega a variável da URL ex. lista-produtos-loja.php?loja=sonda&setor=mercearia
 if (!empty($_GET['loja'])) {
 	$loja = $_GET['loja'];
 }
-if (!empty($_GET['setor'])) {
-	$setor_chave = $_GET['setor'];
-}
 
+$produtos_loja_query = $conn->prepare("SELECT produtos.nome, produtos.id
+	FROM produtos
+	INNER JOIN produtos_loja on produtos.id = produtos_loja.produto_id
+	WHERE loja_id = :id;");
+$parametro = array('id' => $loja);
+$produtos_loja_query->execute($parametro);
+$produtos_loja_banco = $produtos_loja_query->fetchAll(PDO::FETCH_ASSOC);
+var_dump($produtos_loja_banco);
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +43,7 @@ if (!empty($_GET['setor'])) {
 				<?php foreach($setores[$setor_chave]['produtos'] as $chave => $produto ) : ?>
 					<ul>
 						<!-- Pegar o nome do produto -->
-						<li><?=$produto?></li>
+						<li><?=$produto ['nome']?></li>
 					</ul>
 					<?php if (!empty($loja['imagem'])): ?>
 						<img class="lojas" src="<?=$siteurl . $loja['imagem']?>" alt="Imagem representativa da loja.">
@@ -47,7 +51,7 @@ if (!empty($_GET['setor'])) {
 				<?php endforeach; ?>
 				
 				<?php else : ?>
-					<!-- Trazer 8 produtos aleatórios -->
+					<?=$produto ?>
 			<?php endif; ?>
 		</main>	
 	</body>
