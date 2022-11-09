@@ -21,6 +21,8 @@ $produtos_loja_banco = $produtos_loja_query->fetchAll(PDO::FETCH_ASSOC);
 var_dump($produtos_loja_banco);
 ?>
 
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -39,20 +41,17 @@ var_dump($produtos_loja_banco);
 			
 				<!-- Atualizar para o nome da loja retornados do banco -->
 				<h1><?=$setores[$setor_chave]['titulo']?></h1>
-				
+			<?php endif; ?>	
 				<?php foreach($setores[$setor_chave]['produtos'] as $chave => $produto ) : ?>
 					<ul>
-						<!-- Pegar o nome do produto -->
 						<li><?=$produto ['nome']?></li>
 					</ul>
 					<?php if (!empty($loja['imagem'])): ?>
 						<img class="lojas" src="<?=$siteurl . $loja['imagem']?>" alt="Imagem representativa da loja.">
+					<?php else : ?>
+						<?=$produto . 8 ?>
 					<?php endif; ?>
 				<?php endforeach; ?>
-				
-				<?php else : ?>
-					<?=$produto ?>
-			<?php endif; ?>
 		</main>	
 	</body>
 </html>
