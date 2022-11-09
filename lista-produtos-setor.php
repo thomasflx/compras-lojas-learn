@@ -78,6 +78,18 @@ var_dump($produtos_setor_fetch);
 		
 		<!-- Retorno caso nenhuma loja seja encontrada -->
 		<!-- Trazer 8 produtos aleatórios (RANDOM - order by - limit) -->
+<?php
+	"SELECT setores.nome AS setores
+	FROM produtos_lojas
+	ORDER BY RAND (0,6)
+	LIMIT 6;
+";
+
+?>
+	
+<?php
+
+?>
 	
 	<?php endif; ?>
 </body>
