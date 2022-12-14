@@ -87,15 +87,7 @@ $produtos_setor_query = $conn->prepare("SELECT produtos.nome AS produto
 	LIMIT 8;
 	");
 	$parametro = array('id' => $setor_chave);
-	// = [ 
-		//'1' => 'Adega e Bebidas',
-		//'2' => 'Açougue',
-		//'3' => 'Padaria',
-		//'4' => 'Marcenaria',
-		//'5' => 'Hortifruti',
-		//'6' => 'Higiêne e Limpeza'
-		//];
-	
+	$produtos_setor_query->execute($parametro);
 	$produtos_setor_fetch = $produtos_setor_query->fetchAll(PDO::FETCH_ASSOC);
 
 	var_dump($produtos_setor_fetch);
