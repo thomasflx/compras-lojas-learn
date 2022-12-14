@@ -79,11 +79,32 @@ var_dump($produtos_setor_fetch);
 		<!-- Retorno caso nenhuma loja seja encontrada -->
 		<!-- Trazer 8 produtos aleatórios (RANDOM - order by - limit) -->
 <?php
-	"SELECT setores.nome AS setores
+$produtos_setor_query = $conn->prepare("SELECT produtos.nome AS produto 
 	FROM produtos_lojas
-	ORDER BY RAND (0,6)
-	LIMIT 6;
-";
+	INNER JOIN produtos ON produtos.id = produtos_loja.id
+	INNER JOIN setores ON setores.id = produtos_loja.id
+	ORDER BY produtos.nome
+	LIMIT 8;
+	");
+	$parametro = array('id' => $setor_chave);
+	// = [ 
+		//'1' => 'Adega e Bebidas',
+		//'2' => 'Açougue',
+		//'3' => 'Padaria',
+		//'4' => 'Marcenaria',
+		//'5' => 'Hortifruti',
+		//'6' => 'Higiêne e Limpeza'
+		//];
+	
+	$produtos_setor_fetch = $produtos_setor_query->fetchAll(PDO::FETCH_ASSOC);
+
+	var_dump($produtos_setor_fetch);
+	
+//"SELECT setores.nome AS setores
+	//FROM produtos_lojas
+	//ORDER BY RAND (0,6)
+	//LIMIT 6;s
+//";
 
 ?>
 	
