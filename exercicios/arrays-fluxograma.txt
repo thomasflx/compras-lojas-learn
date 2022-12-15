@@ -1,0 +1,7 @@
+Eu crio o array de cidades
+Eu crio o array com as informações
+Pego as chaves do array cidades - chaves_cidades
+Ordernar de maneira aleatória a variável chaves_cidades
+Iterar as chaves_cidades com valor e chave:
+    Exibir o nome da cidade
+    Exibir as informações da cidade a partir da chave na variavel informações
