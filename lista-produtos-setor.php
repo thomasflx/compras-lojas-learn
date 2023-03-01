@@ -1,4 +1,4 @@
-<?php
+   <?php
 
 // Incluir os arquivos db.php e init.php
 include('includes/init.php');
@@ -79,12 +79,13 @@ var_dump($produtos_setor_fetch);
 		<!-- Retorno caso nenhuma loja seja encontrada -->
 		<!-- Trazer 8 produtos aleatórios (RANDOM - order by - limit) -->
 <?php
-$produtos_setor_query = $conn->prepare("SELECT produtos.nome AS produto 
-	FROM produtos_loja
-	INNER JOIN produtos ON produtos.id = produtos_loja.produto_id
-	INNER JOIN setores ON setores.id = produtos_loja.id
-	ORDER BY produtos.nome
-	LIMIT 8;
+$produtos_setor_query = $conn->prepare("SELECT * FROM setores ORDER BY RAND () LIMIT 6;
+	
+	<!--FROM produtos_loja -->
+	<!--INNER JOIN produtos ON produtos.id = produtos_loja.produto_id
+	<!--INNER JOIN setores ON setores.id = produtos_loja.id
+	<!--ORDER BY produtos.nome
+	<!--LIMIT 8;-->
 	");
 	$produtos_setor_query->execute();
 	$produtos_setor_fetch = $produtos_setor_query->fetchAll(PDO::FETCH_ASSOC);
