@@ -43,15 +43,20 @@ var_dump($produtos_loja_banco);
 				<h1><?=$setores[$setor_chave]['titulo']?></h1>
 			<?php endif; ?>	
 				<?php foreach($setores[$setor_chave]['produtos'] as $chave => $produto ) : ?>
-					<ul>
-						<li><?=$produto ['nome']?></li>
-					</ul>
-					<?php if (!empty($loja['imagem'])): ?>
-						<img class="lojas" src="<?=$siteurl . $loja['imagem']?>" alt="Imagem representativa da loja.">
-					<?php else : ?>
-						<?=$produto . 8 ?>
-					<?php endif; ?>
-				<?php endforeach; ?>
+				<ul>
+					<li><?=$produto ['nome']?></li>
+				</ul>
+				<?php if (!empty($loja['imagem'])): ?>
+					<img class="lojas" src="<?=$siteurl . $loja['imagem']?>" alt="Imagem representativa da loja.">
+				<?php else : 
+					"SELECT setores.nome AS setores
+						FROM produtos_lojas
+						ORDER BY RAND (0,6)
+						LIMIT 6;s
+					";
+				?>
+				<?php endif; ?>
+			<?php endforeach; ?>
 		</main>	
 	</body>
 </html>
