@@ -79,29 +79,32 @@ var_dump($produtos_setor_fetch);
 		<!-- Retorno caso nenhuma loja seja encontrada -->
 		<!-- Trazer 8 produtos aleatórios (RANDOM - order by - limit) -->
 <?php
-$produtos_setor_query = $conn->prepare("SELECT * FROM setores ORDER BY RAND () LIMIT 6;
-	
-	<!--FROM produtos_loja -->
-	<!--INNER JOIN produtos ON produtos.id = produtos_loja.produto_id
-	<!--INNER JOIN setores ON setores.id = produtos_loja.id
-	<!--ORDER BY produtos.nome
-	<!--LIMIT 8;-->
+// Comando antigo
+/*$produtos_setor_query = $conn->prepare("
+	FROM produtos_loja
+	INNER JOIN produtos ON produtos.id = produtos_loja.produto_id
+	INNER JOIN setores ON setores.id = produtos_loja.id
+	ORDER BY produtos.nome
+	LIMIT 8
+	");*/
+
+	$produtos_setor_query = $conn->prepare("SELECT produtos.nome, produtos_loja.setor_id
+		FROM produtos_loja
+		INNER JOIN produtos
+		WHERE produtos_loja.setor_id = :id
+		ORDER BY RAND ()
+		LIMIT 6;
 	");
-	$produtos_setor_query->execute();
+	$produtos_setor_query->execute([ 'id' => $setor_chave ]);
 	$produtos_setor_fetch = $produtos_setor_query->fetchAll(PDO::FETCH_ASSOC);
 
 	var_dump($produtos_setor_fetch);
 	
-//"SELECT setores.nome AS setores
-	//FROM produtos_lojas
-	//ORDER BY RAND (0,6)
-	//LIMIT 6;s
-//";
-
-?>
-	
-<?php
-
+	// "SELECT setores.nome AS setores
+	// 	FROM produtos_lojas
+	// 	ORDER BY RAND (0,6)
+	// 	LIMIT 6;s
+	// ";
 ?>
 	
 	<?php endif; ?>
