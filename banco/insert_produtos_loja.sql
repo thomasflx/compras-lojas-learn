@@ -50,13 +50,3 @@ insert into produtos_loja (preco, quantidade, validade, descricao, produto_id, l
 insert into produtos_loja (preco, quantidade, validade, descricao, produto_id, loja_id, setor_id) values (3, 50, "2022/12/25", "igualzinho o de Minas", 17, 3, 3);
 insert into produtos_loja (preco, quantidade, validade, descricao, produto_id, loja_id, setor_id) values (26, 15, "2022/12/25", "essa mesmo a do porco", 22, 3, 2);
 insert into produtos_loja (preco, quantidade, validade, descricao, produto_id, loja_id, setor_id) values (8, 10, "2022/12/25", "ao arrotar por favor tomar cuidado com quem está próximo", 25, 3, 1);
-
-
-
-
-
-
-
-
-
-
