@@ -108,5 +108,8 @@ var_dump($produtos_setor_fetch);
 ?>
 	
 	<?php endif; ?>
+
+	<h1><a href= "http://localhost/compras-lojas-learn/produto.php">Lista de Produtos</a></h1>
+
 </body>
 </html>
