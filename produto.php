@@ -65,11 +65,11 @@ try {
 			<h2><?=$produto_banco['nome']?></h2>
 			
 			<?php if (  empty($produto_banco['img'])) : ?>
-				<img class="produto-img" src="<?=$produto_banco['img']?>" alt="<?=$produto_banco['nome']?>">
+				<img class="produto-img" src="<?=$produto_banco['imagem']?>" alt="<?=$produto_banco['imagem']?>">
 			<?php endif; ?>
 		
 			<ul>
-				<li>Valor: <?=$produto_banco['valor']?></li> <!-- depois -->
+				<li>Valor: <?=$produto_banco['slug']?></li> <!-- depois -->
 				<li>Descrição: <?=$produto_banco['descricao']?></li>
 			</ul>
 		
