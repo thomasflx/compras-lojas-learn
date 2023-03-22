@@ -1,6 +1,6 @@
 <?php
 
-if ( ! empty($_GET['produto'])) {
+if ( !empty($_GET['produto'])) {
 	$produto = $_GET['produto']; // Pega o valor de produto da URL
 } else {
 	$nao_existe = 1;
@@ -58,18 +58,18 @@ try {
 		include('includes/header.php');
 		?>
 		
-		<?php if ($nao_existe) : ?>
+		<?php if ( empty($produto_banco['nome'])) : ?>
 			<h1>Produto não encontrado</h1>
 		<?php else : ?>
 			
 			<h2><?=$produto_banco['nome']?></h2>
 			
-			<?php if ( ! empty($produto_banco['img'])) : ?>
-				<img class="produto-img" src="<?=$produto_banco['img']?>" alt="<?=$produto_banco['nome']?>">
+			<?php if (  empty($produto_banco['img'])) : ?>
+				<img class="produto-img" src="<?=$produto_banco['imagem']?>" alt="<?=$produto_banco['imagem']?>">
 			<?php endif; ?>
 		
 			<ul>
-				<li>Valor: <?=$produto_banco['valor']?></li> <!-- depois -->
+				<li>Valor: <?=$produto_banco['slug']?></li> <!-- depois -->
 				<li>Descrição: <?=$produto_banco['descricao']?></li>
 			</ul>
 		
